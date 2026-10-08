@@ -1,0 +1,2948 @@
+<!DOCTYPE html>
+<html lang="nl" class="scroll-smooth">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>A.S.T. Schilder-, Renovatie- & Waterdichtingswerken | Meesterschap & 4-6 Jaar Garantie</title>
+  <meta name="description" content="A.S.T. (Algemene Schilderwerken Terbank) uit Wilsele (Leuven): specialist in binnen- en buitenschilderwerk, waterdichting, totaalrenovatie en studentenresidenties met 35+ jaar ervaring en 4 tot 6 jaar garantie.">
+  
+  <!-- Favicon using original logo -->
+  <link rel="icon" type="image/png" href="logo.png">
+
+  <!-- Google Fonts: Plus Jakarta Sans for crisp modern typography & Playfair Display for editorial authority -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:ital,wght@0,300;0,400;0,500;0,600;0,700;0,800;1,400;1,600&family=Playfair+Display:ital,wght@0,600;0,700;0,800;1,600&display=swap" rel="stylesheet">
+  
+  <!-- FontAwesome 6 CDN -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css" integrity="sha512-DTOQO9RWCH3ppGqcWaEA1BIZOC6xxalwEsw9c2QQeAIftl+Vegovlnee1c9QX4TctnWMn13TZye+giMm8e2LwA==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+
+  <!-- Tailwind CSS CDN with Dark Mode Class Configuration -->
+  <script src="https://cdn.tailwindcss.com"></script>
+  <script>
+    tailwind.config = {
+      darkMode: 'class',
+      theme: {
+        extend: {
+          colors: {
+            brand: {
+              canvas: '#F8FAFC',    /* Cool crisp white-slate canvas */
+              surface: '#FFFFFF',   /* Pure crisp white */
+              dark: '#07111E',     /* Deepest premium navy */
+              navy: '#0B1C33',     /* Rich corporate navy */
+              slate: '#1E293B',    /* Dark slate */
+              muted: '#64748B',    /* Cool slate gray */
+              border: '#E2E8F0',   /* Crisp slate border */
+              blue: {
+                DEFAULT: '#0088CB', /* Originele AST Blauw uit logo */
+                hover: '#0072B0',
+                light: '#E0F2FE',
+                dark: '#00598A',
+                accent: '#0284C7',
+                bright: '#009CF0'
+              }
+            }
+          },
+          fontFamily: {
+            sans: ['"Plus Jakarta Sans"', 'sans-serif'],
+            serif: ['"Playfair Display"', 'Georgia', 'serif']
+          },
+          boxShadow: {
+            'luxury': '0 20px 40px -15px rgba(11, 28, 51, 0.07), 0 0 1px 1px rgba(11, 28, 51, 0.05)',
+            'luxury-hover': '0 25px 50px -12px rgba(0, 136, 203, 0.22), 0 0 1px 1px rgba(0, 136, 203, 0.25)',
+            'floating': '0 30px 60px -20px rgba(7, 17, 30, 0.35)'
+          }
+        }
+      }
+    }
+  </script>
+
+  <style>
+    /* Custom Smooth Scroll & AST Blue Selection */
+    ::selection {
+      background-color: #0088CB;
+      color: #FFFFFF;
+    }
+    
+    /* Before After Slider Styling with Clip-Path */
+    .slider-container {
+      position: relative;
+      overflow: hidden;
+      user-select: none;
+      -webkit-user-select: none;
+    }
+
+    /* Range slider custom thumb */
+    input[type=range].custom-slider::-webkit-slider-thumb {
+      appearance: none;
+      width: 26px;
+      height: 26px;
+      border-radius: 50%;
+      background: #0088CB;
+      border: 3px solid #FFFFFF;
+      box-shadow: 0 4px 12px rgba(0, 136, 203, 0.45);
+      cursor: pointer;
+    }
+    input[type=range].custom-slider::-moz-range-thumb {
+      width: 26px;
+      height: 26px;
+      border-radius: 50%;
+      background: #0088CB;
+      border: 3px solid #FFFFFF;
+      box-shadow: 0 4px 12px rgba(0, 136, 203, 0.45);
+      cursor: pointer;
+    }
+
+    /* Accordion transitions */
+    .faq-answer {
+      max-height: 0;
+      overflow: hidden;
+      transition: max-height 0.35s ease-out, opacity 0.25s ease;
+      opacity: 0;
+    }
+    .faq-answer.open {
+      max-height: 600px;
+      opacity: 1;
+    }
+
+    /* Step animations */
+    .step-fade {
+      transition: opacity 0.3s ease, transform 0.3s ease;
+    }
+    .step-hidden {
+      display: none;
+      opacity: 0;
+      transform: translateY(10px);
+    }
+    .step-active {
+      display: block;
+      opacity: 1;
+      transform: translateY(0);
+    }
+  </style>
+</head>
+<body class="bg-brand-canvas dark:bg-[#07111E] text-brand-dark dark:text-slate-100 antialiased font-sans selection:bg-brand-blue selection:text-white transition-colors duration-300">
+
+  <!-- Top Announcement Bar (Trust & Authority) -->
+  <div class="bg-brand-dark dark:bg-[#040A12] text-slate-300 text-xs py-2 px-4 sm:px-6 lg:px-8 border-b border-slate-800/80 tracking-wide">
+    <div class="max-w-[1550px] mx-auto flex flex-col sm:flex-row justify-between items-center gap-2">
+      <div class="flex flex-wrap items-center justify-center sm:justify-start gap-2.5 sm:gap-4 text-[11px] sm:text-xs">
+        <span class="inline-flex items-center gap-1.5 text-brand-blue font-bold">
+          <i class="fa-solid fa-award text-xs sm:text-sm"></i>
+          <span data-i18n="top_bar_craft">35+ Jaar Ervaring (Sinds 1989)</span>
+        </span>
+        <span class="hidden md:inline text-slate-700">•</span>
+        <span class="hidden md:inline text-slate-300" data-i18n="top_bar_warranty">4 tot 6 jaar schriftelijke garantie</span>
+        <span class="hidden lg:inline text-slate-700">•</span>
+        <span class="hidden lg:inline text-slate-300" data-i18n="top_bar_onsite">Zaakvoerder Jeroen Vandevenne op de werf</span>
+      </div>
+      <div class="flex items-center gap-4 sm:gap-6 text-[11px] sm:text-xs font-medium">
+        <a href="tel:+32498522314" class="hover:text-brand-blue transition-colors flex items-center gap-1.5 font-semibold text-white">
+          <i class="fa-solid fa-phone text-[10px] sm:text-[11px] text-brand-blue"></i>
+          <span>0498 52 23 14</span>
+        </a>
+        <a href="mailto:ast.jeroen@hotmail.com" class="hover:text-brand-blue transition-colors hidden sm:flex items-center gap-1.5 text-slate-300">
+          <i class="fa-solid fa-envelope text-[10px] sm:text-[11px] text-brand-blue"></i>
+          <span>ast.jeroen@hotmail.com</span>
+        </a>
+      </div>
+    </div>
+  </div>
+
+  <!-- Sticky Luxury Header with Generous Breathing Room -->
+  <header id="main-header" class="sticky top-0 z-50 bg-brand-surface/95 dark:bg-[#0B1A2F]/95 backdrop-blur-md border-b border-brand-border dark:border-slate-800 transition-all duration-300">
+    <div class="max-w-[1550px] mx-auto px-4 sm:px-6 lg:px-8">
+      <div class="flex justify-between items-center h-20 sm:h-24 gap-4">
+        
+        <!-- Logo & Brand Badge (Authentic AST Logo) -->
+        <a href="#hero" class="flex items-center gap-3.5 group shrink-0 py-1">
+          <img src="logo.png" 
+               alt="A.S.T. Algemene Schilderwerken Terbank Logo" 
+               class="h-10 sm:h-12 w-auto object-contain filter drop-shadow-sm group-hover:scale-105 transition-transform duration-200">
+          <div class="flex flex-col border-l border-slate-200 dark:border-slate-700 pl-3">
+            <div class="flex items-center gap-2">
+              <span class="font-bold text-lg sm:text-xl tracking-tight text-brand-dark dark:text-white group-hover:text-brand-blue transition-colors">A.S.T.</span>
+              <span class="text-[10px] tracking-widest uppercase font-extrabold px-2 py-0.5 rounded-full bg-brand-blue/10 text-brand-blue border border-brand-blue/20">
+                Leuven
+              </span>
+            </div>
+            <!-- Subtitle: visible on 2xl where there is abundant space; hidden on narrower screens to prevent crowding -->
+            <span class="hidden 2xl:block text-[11px] uppercase tracking-wider text-brand-muted dark:text-slate-400 font-medium whitespace-nowrap" data-i18n="logo_subtitle">
+              Schilder-, Renovatie- & Waterdichting
+            </span>
+          </div>
+        </a>
+
+        <!-- Desktop Navigation Links with Generous Spacing & Dedicated Hover Targets -->
+        <nav class="hidden xl:flex items-center gap-1.5 2xl:gap-3 text-[13.5px] 2xl:text-[14.5px] font-semibold tracking-normal">
+          <a href="#waarom" class="px-3.5 py-2 rounded-xl text-slate-700 dark:text-slate-200 hover:text-brand-blue hover:bg-slate-100 dark:hover:bg-slate-800/80 transition-all whitespace-nowrap" data-i18n="nav_why">Waarom A.S.T.</a>
+          <a href="#diensten" class="px-3.5 py-2 rounded-xl text-slate-700 dark:text-slate-200 hover:text-brand-blue hover:bg-slate-100 dark:hover:bg-slate-800/80 transition-all whitespace-nowrap" data-i18n="nav_services">Diensten</a>
+          <a href="#garantie" class="px-3.5 py-2 rounded-xl text-brand-blue bg-brand-blue/10 dark:bg-brand-blue/15 hover:bg-brand-blue/20 transition-all whitespace-nowrap flex items-center gap-1.5 font-bold">
+            <i class="fa-solid fa-shield-halved text-xs"></i>
+            <span data-i18n="nav_warranty">4–6 Jaar Garantie</span>
+          </a>
+          <a href="#realisaties" class="px-3.5 py-2 rounded-xl text-slate-700 dark:text-slate-200 hover:text-brand-blue hover:bg-slate-100 dark:hover:bg-slate-800/80 transition-all whitespace-nowrap" data-i18n="nav_projects">Realisaties</a>
+          <a href="#reviews" class="px-3.5 py-2 rounded-xl text-slate-700 dark:text-slate-200 hover:text-brand-blue hover:bg-slate-100 dark:hover:bg-slate-800/80 transition-all whitespace-nowrap" data-i18n="nav_reviews">Ervaringen</a>
+          <a href="#contact" class="px-3.5 py-2 rounded-xl text-slate-700 dark:text-slate-200 hover:text-brand-blue hover:bg-slate-100 dark:hover:bg-slate-800/80 transition-all whitespace-nowrap" data-i18n="nav_contact">Contact</a>
+        </nav>
+
+        <!-- Right Side: Dark/Light Mode + Language Switcher + CTA Button -->
+        <div class="flex items-center gap-2 sm:gap-3 shrink-0">
+          
+          <!-- Dark / Light Mode Toggle Button -->
+          <button onclick="toggleTheme()" id="theme-toggle-btn" class="w-10 h-10 rounded-xl bg-slate-100 dark:bg-slate-800 border border-slate-200 dark:border-slate-700 flex items-center justify-center text-slate-700 dark:text-amber-400 hover:scale-105 hover:border-brand-blue/50 transition-all shadow-sm focus:outline-none shrink-0" aria-label="Wissel donker/licht thema">
+            <i id="theme-toggle-icon" class="fa-solid fa-moon text-sm"></i>
+          </button>
+
+          <!-- Trilingual Switcher (NL | FR | EN) -->
+          <div class="inline-flex items-center p-1 rounded-xl bg-slate-100 dark:bg-slate-800 border border-slate-200 dark:border-slate-700 text-xs font-bold shadow-sm shrink-0">
+            <button onclick="setLanguage('nl')" id="lang-btn-nl" class="lang-btn px-2.5 py-1 rounded-lg text-slate-600 dark:text-slate-300 transition-all hover:text-brand-dark dark:hover:text-white">NL</button>
+            <span class="text-slate-300 dark:text-slate-600 text-[10px] px-0.5">|</span>
+            <button onclick="setLanguage('fr')" id="lang-btn-fr" class="lang-btn px-2.5 py-1 rounded-lg text-slate-600 dark:text-slate-300 transition-all hover:text-brand-dark dark:hover:text-white">FR</button>
+            <span class="text-slate-300 dark:text-slate-600 text-[10px] px-0.5">|</span>
+            <button onclick="setLanguage('en')" id="lang-btn-en" class="lang-btn px-2.5 py-1 rounded-lg text-slate-600 dark:text-slate-300 transition-all hover:text-brand-dark dark:hover:text-white">EN</button>
+          </div>
+
+          <!-- Primary Header CTA Button (Visible on xl and up, avoiding tablet/mobile crowding) -->
+          <a href="#offerte-funnel" class="hidden xl:inline-flex items-center justify-center gap-2 px-5 py-2.5 rounded-xl bg-brand-blue text-white text-xs font-bold uppercase tracking-wider hover:bg-brand-blue-hover transition-all duration-200 shadow-md hover:shadow-luxury-hover shrink-0 whitespace-nowrap">
+            <i class="fa-solid fa-calendar-check text-[11px]"></i>
+            <span data-i18n="nav_cta">Vrijblijvende Offerte</span>
+          </a>
+
+          <!-- Mobile / Tablet Hamburger Toggle Button -->
+          <button id="mobile-menu-btn" onclick="toggleMobileMenu()" class="xl:hidden w-10 h-10 rounded-xl bg-slate-100 dark:bg-slate-800 border border-slate-200 dark:border-slate-700 flex items-center justify-center text-slate-700 dark:text-slate-200 hover:text-brand-blue hover:bg-slate-200 dark:hover:bg-slate-700 transition-all shrink-0 focus:outline-none" aria-label="Menu openen">
+            <i id="menu-icon" class="fa-solid fa-bars text-lg"></i>
+          </button>
+        </div>
+
+      </div>
+    </div>
+
+    <!-- Mobile Drawer Menu with Full Spacing & Modern Cards -->
+    <div id="mobile-menu" class="hidden xl:hidden bg-brand-surface dark:bg-[#0B1A2F] border-b border-brand-border dark:border-slate-800 px-5 sm:px-8 py-6 transition-all duration-300 shadow-2xl">
+      <div class="flex flex-col gap-2.5 text-sm font-semibold tracking-wide">
+        <a href="#waarom" onclick="toggleMobileMenu()" class="py-3 px-4 rounded-xl text-slate-800 dark:text-slate-200 hover:bg-slate-100 dark:hover:bg-slate-800 transition-colors flex items-center justify-between" data-i18n="nav_why">
+          <span>Waarom A.S.T.</span>
+          <i class="fa-solid fa-chevron-right text-xs text-slate-400"></i>
+        </a>
+        <a href="#diensten" onclick="toggleMobileMenu()" class="py-3 px-4 rounded-xl text-slate-800 dark:text-slate-200 hover:bg-slate-100 dark:hover:bg-slate-800 transition-colors flex items-center justify-between" data-i18n="nav_services">
+          <span>Diensten</span>
+          <i class="fa-solid fa-chevron-right text-xs text-slate-400"></i>
+        </a>
+        <a href="#garantie" onclick="toggleMobileMenu()" class="py-3 px-4 rounded-xl text-brand-blue bg-brand-blue/10 dark:bg-brand-blue/15 border border-brand-blue/25 font-bold flex items-center justify-between">
+          <div class="flex items-center gap-2.5">
+            <i class="fa-solid fa-shield-halved text-sm"></i>
+            <span data-i18n="nav_warranty">4–6 Jaar Garantie</span>
+          </div>
+          <i class="fa-solid fa-chevron-right text-xs text-brand-blue"></i>
+        </a>
+        <a href="#realisaties" onclick="toggleMobileMenu()" class="py-3 px-4 rounded-xl text-slate-800 dark:text-slate-200 hover:bg-slate-100 dark:hover:bg-slate-800 transition-colors flex items-center justify-between" data-i18n="nav_projects">
+          <span>Realisaties</span>
+          <i class="fa-solid fa-chevron-right text-xs text-slate-400"></i>
+        </a>
+        <a href="#reviews" onclick="toggleMobileMenu()" class="py-3 px-4 rounded-xl text-slate-800 dark:text-slate-200 hover:bg-slate-100 dark:hover:bg-slate-800 transition-colors flex items-center justify-between" data-i18n="nav_reviews">
+          <span>Ervaringen</span>
+          <i class="fa-solid fa-chevron-right text-xs text-slate-400"></i>
+        </a>
+        <a href="#contact" onclick="toggleMobileMenu()" class="py-3 px-4 rounded-xl text-slate-800 dark:text-slate-200 hover:bg-slate-100 dark:hover:bg-slate-800 transition-colors flex items-center justify-between" data-i18n="nav_contact">
+          <span>Contact</span>
+          <i class="fa-solid fa-chevron-right text-xs text-slate-400"></i>
+        </a>
+        
+        <div class="pt-4 mt-2 border-t border-slate-100 dark:border-slate-800 flex flex-col gap-3">
+          <a href="#offerte-funnel" onclick="toggleMobileMenu()" class="w-full py-4 rounded-xl bg-brand-blue hover:bg-brand-blue-hover text-white text-center font-bold tracking-wider uppercase text-xs shadow-lg flex items-center justify-center gap-2">
+            <i class="fa-solid fa-calendar-check text-xs"></i>
+            <span data-i18n="nav_cta">Vrijblijvende Offerte</span>
+          </a>
+          <a href="tel:+32498522314" class="w-full py-3.5 rounded-xl border border-slate-200 dark:border-slate-700 text-center font-bold text-xs text-slate-800 dark:text-slate-200 hover:bg-slate-50 dark:hover:bg-slate-800 transition-colors flex items-center justify-center gap-2">
+            <i class="fa-solid fa-phone text-brand-blue"></i>
+            <span>Direct Bellen: 0498 52 23 14</span>
+          </a>
+        </div>
+      </div>
+    </div>
+  </header>
+
+  <main>
+    <!-- HERO SECTION: Master Craftsman Authority with Deep Navy & AST Blue -->
+    <section id="hero" class="relative overflow-hidden bg-brand-dark text-white pt-20 pb-28 md:pt-28 md:pb-36">
+      <!-- Background Image with Deep Blue Architectural Overlay -->
+      <div class="absolute inset-0 z-0">
+        <img src="https://images.unsplash.com/photo-1600585154340-be6161a56a0c?auto=format&fit=crop&w=2000&q=80" 
+             alt="Geschilderd luxueus interieur Leuven" 
+             class="w-full h-full object-cover opacity-20 filter saturate-50 brightness-75">
+        <div class="absolute inset-0 bg-gradient-to-r from-brand-dark via-brand-navy/95 to-brand-dark/85"></div>
+        <div class="absolute inset-0 bg-[radial-gradient(ellipse_at_top_right,_var(--tw-gradient-stops))] from-brand-blue/20 via-transparent to-transparent"></div>
+      </div>
+
+      <div class="relative z-10 max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+        <div class="max-w-3xl">
+          
+          <!-- Quality Seal Pill -->
+          <div class="inline-flex items-center gap-2.5 px-4 py-1.5 rounded-full bg-slate-900/90 border border-brand-blue/40 text-slate-200 text-xs font-semibold mb-6 shadow-inner backdrop-blur-sm">
+            <span class="w-2.5 h-2.5 rounded-full bg-brand-blue animate-pulse"></span>
+            <span class="text-brand-blue font-bold tracking-wider" data-i18n="hero_pill_years">35+ JAAR ERVARING</span>
+            <span class="text-slate-500">•</span>
+            <span data-i18n="hero_pill_region">Wilsele, Leuven & Vlaams-Brabant</span>
+          </div>
+
+          <!-- Main Editorial Heading -->
+          <h1 class="font-serif text-3xl sm:text-5xl lg:text-6xl font-bold tracking-tight text-white leading-[1.15] mb-6">
+            <span data-i18n="hero_title_p1">Duurzaam schilder- en renovatiewerk met</span>
+            <span class="block mt-1 text-transparent bg-clip-text bg-gradient-to-r from-brand-blue via-sky-300 to-brand-blue" data-i18n="hero_title_highlight">
+              4 tot 6 jaar schriftelijke garantie.
+            </span>
+          </h1>
+
+          <!-- Subtitle / Value Proposition -->
+          <p class="text-base sm:text-lg text-slate-300 font-normal leading-relaxed mb-10 max-w-2xl" data-i18n="hero_subtitle">
+            Waar budget-schilders oppervlakkig haastwerk leveren, waarborgen onze 12 gecertificeerde vakmannen een compromisloze voorbereiding, professionele verfsystemen en decennialange bescherming van uw eigendom.
+          </p>
+
+          <!-- Action Buttons in AST Blue & Steel Blue -->
+          <div class="flex flex-col sm:flex-row items-stretch sm:items-center gap-4 mb-14">
+            <a href="#offerte-funnel" class="inline-flex items-center justify-center gap-3 px-8 py-4 rounded-lg bg-brand-blue hover:bg-brand-blue-hover text-white font-bold text-sm uppercase tracking-wider transition-all duration-200 shadow-luxury hover:shadow-luxury-hover hover:-translate-y-0.5">
+              <span data-i18n="hero_btn_quote">Offerte & Advies Aanvragen</span>
+              <i class="fa-solid fa-arrow-right text-xs"></i>
+            </a>
+            <a href="#realisaties" class="inline-flex items-center justify-center gap-2.5 px-7 py-4 rounded-lg bg-slate-900/90 hover:bg-slate-800 text-slate-200 font-semibold text-sm border border-slate-700 transition-all duration-200 backdrop-blur-sm">
+              <i class="fa-solid fa-images text-brand-blue text-sm"></i>
+              <span data-i18n="hero_btn_portfolio">Bekijk Onze Realisaties</span>
+            </a>
+          </div>
+
+          <!-- Trust Badges Grid (100% Reliable Free Icons) -->
+          <div class="grid grid-cols-1 sm:grid-cols-3 gap-4 pt-8 border-t border-slate-800">
+            <div class="flex items-center gap-3">
+              <div class="w-12 h-12 rounded-xl bg-brand-blue/20 border border-brand-blue/40 flex items-center justify-center text-brand-blue shrink-0 shadow-sm">
+                <!-- Inline SVG Shield with Check for 100% guaranteed rendering -->
+                <svg class="w-6 h-6 text-brand-blue" fill="currentColor" viewBox="0 0 20 20">
+                  <path fill-rule="evenodd" d="M10 1.944A11.954 11.954 0 012.166 5C2.056 5.649 2 6.319 2 7c0 5.225 3.34 9.67 8 11.317C14.66 16.67 18 12.225 18 7c0-.682-.057-1.35-.166-2.001A11.954 11.954 0 0110 1.944zM13.707 8.707a1 1 0 00-1.414-1.414L9 10.586 7.707 9.293a1 1 0 00-1.414 1.414l2 2a1 1 0 001.414 0l4-4z" clip-rule="evenodd"></path>
+                </svg>
+              </div>
+              <div>
+                <p class="font-bold text-sm text-white" data-i18n="badge1_title">4–6 Jaar Garantie</p>
+                <p class="text-xs text-slate-400" data-i18n="badge1_desc">Zwart-op-wit contractueel</p>
+              </div>
+            </div>
+
+            <div class="flex items-center gap-3">
+              <div class="w-12 h-12 rounded-xl bg-brand-blue/20 border border-brand-blue/40 flex items-center justify-center text-brand-blue shrink-0 shadow-sm">
+                <i class="fa-solid fa-users-gear text-xl"></i>
+              </div>
+              <div>
+                <p class="font-bold text-sm text-white" data-i18n="badge2_title">12 Vaste Meesters</p>
+                <p class="text-xs text-slate-400" data-i18n="badge2_desc">Geen wisselende onderaannemers</p>
+              </div>
+            </div>
+
+            <div class="flex items-center gap-3">
+              <div class="w-12 h-12 rounded-xl bg-brand-blue/20 border border-brand-blue/40 flex items-center justify-center text-brand-blue shrink-0 shadow-sm">
+                <i class="fa-solid fa-star text-xl text-amber-400"></i>
+              </div>
+              <div>
+                <p class="font-bold text-sm text-white" data-i18n="badge3_title">Score 4.9 / 5.0</p>
+                <p class="text-xs text-slate-400" data-i18n="badge3_desc">140+ tevreden eigenaars</p>
+              </div>
+            </div>
+          </div>
+
+        </div>
+      </div>
+    </section>
+
+    <!-- TRUST STRIP / PARTNERS -->
+    <section class="bg-brand-surface dark:bg-[#0B1A2F] py-6 border-b border-brand-border dark:border-slate-800 transition-colors">
+      <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+        <div class="flex flex-wrap items-center justify-center md:justify-between gap-6 text-slate-600 dark:text-slate-300 text-xs uppercase tracking-widest font-bold">
+          <span class="flex items-center gap-2">
+            <i class="fa-solid fa-check text-brand-blue"></i>
+            <span data-i18n="partner_sikkens">Sikkens Certified Master Painter</span>
+          </span>
+          <span class="flex items-center gap-2">
+            <i class="fa-solid fa-check text-brand-blue"></i>
+            <span data-i18n="partner_boss">Boss Paints Premium Partner</span>
+          </span>
+          <span class="flex items-center gap-2">
+            <i class="fa-solid fa-check text-brand-blue"></i>
+            <span data-i18n="partner_confederatie">Erkend Bouwunie & Embuild</span>
+          </span>
+          <span class="flex items-center gap-2">
+            <i class="fa-solid fa-check text-brand-blue"></i>
+            <span data-i18n="partner_festool">Stofarm Schuren (Festool HEPA)</span>
+          </span>
+        </div>
+      </div>
+    </section>
+
+    <!-- PRICE JUSTIFICATION & PHILOSOPHY: WAAROM A.S.T. (Kwaliteit vs. Goedkoop) -->
+    <section id="waarom" class="py-24 bg-brand-canvas dark:bg-[#07111E] transition-colors">
+      <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+        
+        <div class="text-center max-w-3xl mx-auto mb-16">
+          <span class="text-xs font-bold uppercase tracking-widest text-brand-blue" data-i18n="why_kicker">Eerlijk Meesterschap</span>
+          <h2 class="font-serif text-3xl sm:text-4xl font-bold text-brand-dark dark:text-white mt-2 mb-4" data-i18n="why_title">
+            Waarom goedkoop schilderwerk na twee seizoenen duurkoop blijkt.
+          </h2>
+          <p class="text-slate-600 dark:text-slate-300 text-base leading-relaxed" data-i18n="why_intro">
+            Een voordelige offerte lijkt aantrekkelijk, tot er na 18 maanden barsten, afbladdering of vochtblaasjes ontstaan. A.S.T. investeert waar anderen bezuinigen: in de voorbereiding, de verflagen en het contractueel garanderen van het resultaat.
+          </p>
+        </div>
+
+        <div class="grid grid-cols-1 md:grid-cols-3 gap-8">
+          
+          <!-- Card 1: Ondergrond & Verfsystemen -->
+          <div class="bg-brand-surface dark:bg-[#0D1E36] rounded-2xl p-8 border border-brand-border dark:border-slate-800 shadow-luxury hover:border-brand-blue/50 hover:shadow-luxury-hover transition-all duration-300 flex flex-col justify-between">
+            <div>
+              <div class="w-14 h-14 rounded-xl bg-blue-50 dark:bg-brand-blue/20 border border-blue-100 dark:border-brand-blue/30 flex items-center justify-center text-brand-blue mb-6">
+                <i class="fa-solid fa-paintbrush text-2xl"></i>
+              </div>
+              <span class="text-[11px] font-bold tracking-widest uppercase text-brand-blue" data-i18n="why_c1_tag">01. Voorbereiding & Verfsystemen</span>
+              <h3 class="font-serif text-xl font-bold text-brand-dark dark:text-white mt-2 mb-3" data-i18n="why_c1_title">
+                70% van ons werk ziet u pas na 5 jaar
+              </h3>
+              <p class="text-slate-600 dark:text-slate-300 text-sm leading-relaxed mb-6" data-i18n="why_c1_desc">
+                Budgetbedrijven schilderen over stof en scheuren heen met aangelengde verf. Wij besteden het leeuwendeel van de tijd aan dieptereiniging, vochtmeting, vliesversterking en microporeuze grondlagen met topmerken zoals Sikkens en Boss Paints.
+              </p>
+            </div>
+            <div class="pt-4 border-t border-slate-100 dark:border-slate-700">
+              <span class="inline-flex items-center gap-2 text-xs font-bold text-slate-800 dark:text-slate-200">
+                <i class="fa-solid fa-circle-check text-brand-blue"></i>
+                <span data-i18n="why_c1_foot">Geen afbladdering of vergeling</span>
+              </span>
+            </div>
+          </div>
+
+          <!-- Card 2: 4 tot 6 Jaar Garantie & Zaakvoerder in AST Deep Navy & Blue -->
+          <div class="bg-brand-navy text-white rounded-2xl p-8 border-2 border-brand-blue/60 shadow-xl relative overflow-hidden flex flex-col justify-between transform md:-translate-y-2">
+            <div class="absolute top-0 right-0 w-36 h-36 bg-brand-blue/20 rounded-full blur-2xl pointer-events-none"></div>
+            <div>
+              <div class="w-14 h-14 rounded-xl bg-brand-blue/20 border border-brand-blue/40 flex items-center justify-center text-brand-blue mb-6 shadow-inner">
+                <i class="fa-solid fa-certificate text-2xl"></i>
+              </div>
+              <span class="text-[11px] font-bold tracking-widest uppercase text-sky-400" data-i18n="why_c2_tag">02. De A.S.T. Zekerheid</span>
+              <h3 class="font-serif text-xl font-bold text-white mt-2 mb-3" data-i18n="why_c2_title">
+                4 tot 6 jaar schriftelijke garantie
+              </h3>
+              <p class="text-slate-300 text-sm leading-relaxed mb-6" data-i18n="why_c2_desc">
+                In tegenstelling tot vage mondelinge toezeggingen ontvangt u bij oplevering een officieel garantiecertificaat. Zaakvoerder Jeroen Vandevenne volgt elke werf persoonlijk op. Mocht er ooit een onvolkomenheid optreden, dan lossen wij dit kosteloos op.
+              </p>
+            </div>
+            <div class="pt-4 border-t border-slate-800">
+              <span class="inline-flex items-center gap-2 text-xs font-bold text-sky-300">
+                <i class="fa-solid fa-file-contract"></i>
+                <span data-i18n="why_c2_foot">Officieel A.S.T. Garantiecertificaat</span>
+              </span>
+            </div>
+          </div>
+
+          <!-- Card 3: Totaalservice onder één dak -->
+          <div class="bg-brand-surface dark:bg-[#0D1E36] rounded-2xl p-8 border border-brand-border dark:border-slate-800 shadow-luxury hover:border-brand-blue/50 hover:shadow-luxury-hover transition-all duration-300 flex flex-col justify-between">
+            <div>
+              <div class="w-14 h-14 rounded-xl bg-blue-50 dark:bg-brand-blue/20 border border-blue-100 dark:border-brand-blue/30 flex items-center justify-center text-brand-blue mb-6">
+                <i class="fa-solid fa-house-chimney-window text-2xl"></i>
+              </div>
+              <span class="text-[11px] font-bold tracking-widest uppercase text-brand-blue" data-i18n="why_c3_tag">03. Alles Onder Één Dak</span>
+              <h3 class="font-serif text-xl font-bold text-brand-dark dark:text-white mt-2 mb-3" data-i18n="why_c3_title">
+                Geen vingerwijzen tussen stielmannen
+              </h3>
+              <p class="text-slate-600 dark:text-slate-300 text-sm leading-relaxed mb-6" data-i18n="why_c3_desc">
+                Heeft uw woning ook Gyproc-afwerking, spuitlakwerk voor deuren of kelderwaterdichting nodig? Onze 12 vaste vakmannen beheersen het hele traject. Eén planning, één factuur en één eindverantwoordelijke.
+              </p>
+            </div>
+            <div class="pt-4 border-t border-slate-100 dark:border-slate-700">
+              <span class="inline-flex items-center gap-2 text-xs font-bold text-slate-800 dark:text-slate-200">
+                <i class="fa-solid fa-circle-check text-brand-blue"></i>
+                <span data-i18n="why_c3_foot">Vaste planning & stipte oplevering</span>
+              </span>
+            </div>
+          </div>
+
+        </div>
+
+        <!-- Comparative Quality Table -->
+        <div class="mt-16 bg-brand-surface dark:bg-[#0D1E36] rounded-2xl border border-brand-border dark:border-slate-800 p-6 sm:p-8 shadow-sm overflow-x-auto transition-colors">
+          <div class="min-w-[600px]">
+            <div class="grid grid-cols-12 pb-4 border-b border-brand-border dark:border-slate-700 text-xs uppercase tracking-wider font-bold text-slate-500 dark:text-slate-400">
+              <div class="col-span-5" data-i18n="table_col_feature">Kwaliteitscriterium</div>
+              <div class="col-span-3 text-slate-400" data-i18n="table_col_cheap">Standaard Budget-Schilder</div>
+              <div class="col-span-4 text-brand-blue font-bold" data-i18n="table_col_ast">A.S.T. Meesterschap</div>
+            </div>
+
+            <div class="grid grid-cols-12 py-4 border-b border-slate-100 dark:border-slate-800 text-sm items-center">
+              <div class="col-span-5 font-semibold text-brand-dark dark:text-slate-200" data-i18n="t_row1_title">Garantietermijn</div>
+              <div class="col-span-3 text-slate-500 dark:text-slate-400 text-xs" data-i18n="t_row1_bad">Wettelijk minimum / Vaak géén</div>
+              <div class="col-span-4 font-bold text-brand-blue flex items-center gap-2">
+                <i class="fa-solid fa-shield-halved text-brand-blue"></i>
+                <span data-i18n="t_row1_good">4 tot 6 Jaar Schriftelijk</span>
+              </div>
+            </div>
+
+            <div class="grid grid-cols-12 py-4 border-b border-slate-100 dark:border-slate-800 text-sm items-center">
+              <div class="col-span-5 font-semibold text-brand-dark dark:text-slate-200" data-i18n="t_row2_title">Voorbereiding & Schuren</div>
+              <div class="col-span-3 text-slate-500 dark:text-slate-400 text-xs" data-i18n="t_row2_bad">Snel handmatig (veel stof)</div>
+              <div class="col-span-4 font-bold text-slate-900 dark:text-white flex items-center gap-2">
+                <i class="fa-solid fa-circle-check text-brand-blue"></i>
+                <span data-i18n="t_row2_good">Machinaal 99.9% stofvrij (Festool)</span>
+              </div>
+            </div>
+
+            <div class="grid grid-cols-12 py-4 border-b border-slate-100 dark:border-slate-800 text-sm items-center">
+              <div class="col-span-5 font-semibold text-brand-dark dark:text-slate-200" data-i18n="t_row3_title">Verfkwaliteit</div>
+              <div class="col-span-3 text-slate-500 dark:text-slate-400 text-xs" data-i18n="t_row3_bad">Discount / Doe-het-zelf verdund</div>
+              <div class="col-span-4 font-bold text-slate-900 dark:text-white flex items-center gap-2">
+                <i class="fa-solid fa-circle-check text-brand-blue"></i>
+                <span data-i18n="t_row3_good">100% Professioneel Sikkens & Boss</span>
+              </div>
+            </div>
+
+            <div class="grid grid-cols-12 py-4 text-sm items-center">
+              <div class="col-span-5 font-semibold text-brand-dark dark:text-slate-200" data-i18n="t_row4_title">Personeel op de werf</div>
+              <div class="col-span-3 text-slate-500 dark:text-slate-400 text-xs" data-i18n="t_row4_bad">Wisselende onderaannemers</div>
+              <div class="col-span-4 font-bold text-slate-900 dark:text-white flex items-center gap-2">
+                <i class="fa-solid fa-circle-check text-brand-blue"></i>
+                <span data-i18n="t_row4_good">12 Vaste Belgische stielmannen</span>
+              </div>
+            </div>
+          </div>
+        </div>
+
+      </div>
+    </section>
+
+    <!-- DIENSTEN OVERZICHT (Services Grid with Authentic Photos from astschilder.be/diensten) -->
+    <section id="diensten" class="py-24 bg-brand-surface dark:bg-[#0A1628] border-t border-b border-brand-border dark:border-slate-800 transition-colors">
+      <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+        
+        <div class="flex flex-col md:flex-row md:items-end justify-between mb-16">
+          <div class="max-w-2xl">
+            <span class="text-xs font-bold uppercase tracking-widest text-brand-blue" data-i18n="services_kicker">Vakdisciplines van A.S.T.</span>
+            <h2 class="font-serif text-3xl sm:text-4xl font-bold text-brand-dark dark:text-white mt-2" data-i18n="services_title">
+              Uitzonderlijke afwerking voor binnen, buiten, renovaties en waterdichting.
+            </h2>
+          </div>
+          <div class="mt-4 md:mt-0">
+            <a href="#offerte-funnel" class="inline-flex items-center gap-2 text-sm font-bold text-brand-blue hover:text-brand-blue-hover transition-colors">
+              <span data-i18n="services_link">Bespreking op locatie aanvragen</span>
+              <i class="fa-solid fa-arrow-right text-xs"></i>
+            </a>
+          </div>
+        </div>
+
+        <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
+          
+          <!-- Dienst 1: Binnenschilderwerk (Foto van astschilder.be/diensten) -->
+          <div class="group bg-brand-canvas dark:bg-[#0D1E36] rounded-2xl overflow-hidden border border-brand-border dark:border-slate-800 hover:shadow-luxury hover:border-brand-blue/50 transition-all duration-300 flex flex-col">
+            <div class="relative h-60 overflow-hidden bg-slate-200 dark:bg-slate-800">
+              <img src="https://static.wixstatic.com/media/cb6ad0_a198aa3bc60d448eba5a7a3f32b237ea~mv2.jpg/v1/fill/w_800,h_600,al_c,q_85/binnenschilderwerk.jpg" 
+                   alt="Schilderwerken binnen A.S.T." 
+                   class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500">
+              <div class="absolute top-4 left-4 bg-brand-dark/85 backdrop-blur-md px-3 py-1 rounded text-white text-xs font-bold">
+                <i class="fa-solid fa-paint-roller mr-1.5 text-brand-blue"></i>
+                <span data-i18n="s1_tag">Binnen</span>
+              </div>
+            </div>
+            <div class="p-6 flex-1 flex flex-col justify-between">
+              <div>
+                <h3 class="font-serif text-xl font-bold text-brand-dark dark:text-white mb-2 group-hover:text-brand-blue transition-colors" data-i18n="s1_title">
+                  Schilderwerken Binnen & Vliesbehang
+                </h3>
+                <p class="text-slate-600 dark:text-slate-300 text-sm leading-relaxed mb-4" data-i18n="s1_desc">
+                  Naadloos strak schilderwerk met kalkverftechnieken, microporeuze primers en renovatievlies. Onze Festool afzuigunits garanderen een leefbare, schone woning tijdens de werken.
+                </p>
+                <ul class="text-xs text-slate-500 dark:text-slate-400 space-y-1.5 mb-6">
+                  <li class="flex items-center gap-2"><i class="fa-solid fa-check text-brand-blue"></i> <span data-i18n="s1_f1">99.9% Stofarm schuren</span></li>
+                  <li class="flex items-center gap-2"><i class="fa-solid fa-check text-brand-blue"></i> <span data-i18n="s1_f2">Plamuren en scheurreparatie</span></li>
+                  <li class="flex items-center gap-2"><i class="fa-solid fa-check text-brand-blue"></i> <span data-i18n="s1_f3">Afwasbare kwaliteitsmuurverf</span></li>
+                </ul>
+              </div>
+              <button onclick="prefillFunnel('Binnenschilderwerk')" class="text-xs font-bold text-brand-blue uppercase tracking-wider flex items-center gap-1.5 hover:gap-2.5 transition-all">
+                <span data-i18n="s_btn">Offerte voor binnenschilderwerk</span>
+                <i class="fa-solid fa-chevron-right text-[10px]"></i>
+              </button>
+            </div>
+          </div>
+
+          <!-- Dienst 2: Buitenschilderwerk (Foto van astschilder.be/diensten) -->
+          <div class="group bg-brand-canvas dark:bg-[#0D1E36] rounded-2xl overflow-hidden border border-brand-border dark:border-slate-800 hover:shadow-luxury hover:border-brand-blue/50 transition-all duration-300 flex flex-col">
+            <div class="relative h-60 overflow-hidden bg-slate-200 dark:bg-slate-800">
+              <img src="https://static.wixstatic.com/media/cb6ad0_4b893d3d27524bfe912ba8c9848aef90~mv2.jpg/v1/fill/w_800,h_600,al_c,q_85/buitenschilderwerk.jpg" 
+                   alt="Schilderwerken buiten A.S.T." 
+                   class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500">
+              <div class="absolute top-4 left-4 bg-brand-dark/85 backdrop-blur-md px-3 py-1 rounded text-white text-xs font-bold">
+                <i class="fa-solid fa-building mr-1.5 text-brand-blue"></i>
+                <span data-i18n="s2_tag">Buiten</span>
+              </div>
+              <div class="absolute bottom-4 right-4 bg-brand-blue text-white text-[10px] font-bold px-2.5 py-1 rounded shadow">
+                4-6 JAAR GARANTIE
+              </div>
+            </div>
+            <div class="p-6 flex-1 flex flex-col justify-between">
+              <div>
+                <h3 class="font-serif text-xl font-bold text-brand-dark dark:text-white mb-2 group-hover:text-brand-blue transition-colors" data-i18n="s2_title">
+                  Schilderwerken Buiten & Gevelbescherming
+                </h3>
+                <p class="text-slate-600 dark:text-slate-300 text-sm leading-relaxed mb-4" data-i18n="s2_desc">
+                  Bescherming tegen slagregen, UV en vorst met ademende silicaatverven en kaleien. Uw gevel blijft jarenlang mos- en scheurvrij met schriftelijke garantie.
+                </p>
+                <ul class="text-xs text-slate-500 dark:text-slate-400 space-y-1.5 mb-6">
+                  <li class="flex items-center gap-2"><i class="fa-solid fa-check text-brand-blue"></i> <span data-i18n="s2_f1">Dampopen gevelsystemen</span></li>
+                  <li class="flex items-center gap-2"><i class="fa-solid fa-check text-brand-blue"></i> <span data-i18n="s2_f2">Houtwerk & kroonlijsten bescherming</span></li>
+                  <li class="flex items-center gap-2"><i class="fa-solid fa-check text-brand-blue"></i> <span data-i18n="s2_f3">Professionele stellingbouw inbegrepen</span></li>
+                </ul>
+              </div>
+              <button onclick="prefillFunnel('Buitenschilderwerk')" class="text-xs font-bold text-brand-blue uppercase tracking-wider flex items-center gap-1.5 hover:gap-2.5 transition-all">
+                <span data-i18n="s_btn">Offerte voor buitenwerk</span>
+                <i class="fa-solid fa-chevron-right text-[10px]"></i>
+              </button>
+            </div>
+          </div>
+
+          <!-- Dienst 3: Gevelreiniging & Kaleien (Foto van astschilder.be/diensten) -->
+          <div class="group bg-brand-canvas dark:bg-[#0D1E36] rounded-2xl overflow-hidden border border-brand-border dark:border-slate-800 hover:shadow-luxury hover:border-brand-blue/50 transition-all duration-300 flex flex-col">
+            <div class="relative h-60 overflow-hidden bg-slate-200 dark:bg-slate-800">
+              <img src="https://static.wixstatic.com/media/cb6ad0_a8264a1da207497e8d01a4ec5774bab1~mv2.jpg/v1/fill/w_800,h_600,al_c,q_85/gevelreiniging.jpg" 
+                   alt="Gevelreiniging A.S.T." 
+                   class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500">
+              <div class="absolute top-4 left-4 bg-brand-dark/85 backdrop-blur-md px-3 py-1 rounded text-white text-xs font-bold">
+                <i class="fa-solid fa-spray-can mr-1.5 text-brand-blue"></i>
+                <span data-i18n="s3_tag">Gevels</span>
+              </div>
+            </div>
+            <div class="p-6 flex-1 flex flex-col justify-between">
+              <div>
+                <h3 class="font-serif text-xl font-bold text-brand-dark dark:text-white mb-2 group-hover:text-brand-blue transition-colors" data-i18n="s3_title">
+                  Gevelreiniging, Kalei & Renovatie
+                </h3>
+                <p class="text-slate-600 dark:text-slate-300 text-sm leading-relaxed mb-4" data-i18n="s3_desc">
+                  Grondige reiniging van verweerd metselwerk, barstherstel en traditionele kaleiwerken. Geeft uw woning een tijdloze, authentieke uitstraling met optimale bescherming.
+                </p>
+                <ul class="text-xs text-slate-500 dark:text-slate-400 space-y-1.5 mb-6">
+                  <li class="flex items-center gap-2"><i class="fa-solid fa-check text-brand-blue"></i> <span data-i18n="s3_f1">Zachte stoom- & zandreiniging</span></li>
+                  <li class="flex items-center gap-2"><i class="fa-solid fa-check text-brand-blue"></i> <span data-i18n="s3_f2">Ademende minerale kalei</span></li>
+                  <li class="flex items-center gap-2"><i class="fa-solid fa-check text-brand-blue"></i> <span data-i18n="s3_f3">Herstel van voegwerk & dorpels</span></li>
+                </ul>
+              </div>
+              <button onclick="prefillFunnel('Buitenschilderwerk')" class="text-xs font-bold text-brand-blue uppercase tracking-wider flex items-center gap-1.5 hover:gap-2.5 transition-all">
+                <span data-i18n="s_btn">Offerte voor gevelreiniging</span>
+                <i class="fa-solid fa-chevron-right text-[10px]"></i>
+              </button>
+            </div>
+          </div>
+
+          <!-- Dienst 4: Onderhoud Houten Ramen & Deuren (Foto van astschilder.be/diensten) -->
+          <div class="group bg-brand-canvas dark:bg-[#0D1E36] rounded-2xl overflow-hidden border border-brand-border dark:border-slate-800 hover:shadow-luxury hover:border-brand-blue/50 transition-all duration-300 flex flex-col">
+            <div class="relative h-60 overflow-hidden bg-slate-200 dark:bg-slate-800">
+              <img src="https://static.wixstatic.com/media/cb6ad0_972444e994b34bbcbcf94bbd1c7d81d2~mv2.jpg/v1/fill/w_800,h_600,al_c,q_85/ramen_en_deuren.jpg" 
+                   alt="Onderhoud houten ramen en deuren A.S.T." 
+                   class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500">
+              <div class="absolute top-4 left-4 bg-brand-dark/85 backdrop-blur-md px-3 py-1 rounded text-white text-xs font-bold">
+                <i class="fa-solid fa-door-open mr-1.5 text-brand-blue"></i>
+                <span data-i18n="s4_tag">Schrijnwerk</span>
+              </div>
+            </div>
+            <div class="p-6 flex-1 flex flex-col justify-between">
+              <div>
+                <h3 class="font-serif text-xl font-bold text-brand-dark dark:text-white mb-2 group-hover:text-brand-blue transition-colors" data-i18n="s4_title">
+                  Onderhoud Houten Ramen & Deuren
+                </h3>
+                <p class="text-slate-600 dark:text-slate-300 text-sm leading-relaxed mb-4" data-i18n="s4_desc">
+                  Preventief en curatief lak- en schilderwerk voor buitenschrijnwerk, garagepoorten en binnendeuren. Wij herstellen houtrot en voorzien elastische, UV-vaste laklagen.
+                </p>
+                <ul class="text-xs text-slate-500 dark:text-slate-400 space-y-1.5 mb-6">
+                  <li class="flex items-center gap-2"><i class="fa-solid fa-check text-brand-blue"></i> <span data-i18n="s4_f1">Houtrotinspectie en epoxyreparaties</span></li>
+                  <li class="flex items-center gap-2"><i class="fa-solid fa-check text-brand-blue"></i> <span data-i18n="s4_f2">Spiegelglad machinaal lakwerk</span></li>
+                  <li class="flex items-center gap-2"><i class="fa-solid fa-check text-brand-blue"></i> <span data-i18n="s4_f3">Weerbestendige microporeuze lak</span></li>
+                </ul>
+              </div>
+              <button onclick="prefillFunnel('RamenEnDeuren')" class="text-xs font-bold text-brand-blue uppercase tracking-wider flex items-center gap-1.5 hover:gap-2.5 transition-all">
+                <span data-i18n="s_btn">Offerte voor ramen & deuren</span>
+                <i class="fa-solid fa-chevron-right text-[10px]"></i>
+              </button>
+            </div>
+          </div>
+
+          <!-- Dienst 5: Gyprocwerken, Tussenwanden & Mortex (Foto van astschilder.be/diensten) -->
+          <div class="group bg-brand-canvas dark:bg-[#0D1E36] rounded-2xl overflow-hidden border border-brand-border dark:border-slate-800 hover:shadow-luxury hover:border-brand-blue/50 transition-all duration-300 flex flex-col">
+            <div class="relative h-60 overflow-hidden bg-slate-200 dark:bg-slate-800">
+              <img src="https://static.wixstatic.com/media/cb6ad0_6c656783ef2149f7b78b2fa3428e6dc3~mv2.jpg/v1/fill/w_800,h_600,al_c,q_85/gyproc_wanden.jpg" 
+                   alt="Gyprocwerken en tussenwanden A.S.T." 
+                   class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500">
+              <div class="absolute top-4 left-4 bg-brand-dark/85 backdrop-blur-md px-3 py-1 rounded text-white text-xs font-bold">
+                <i class="fa-solid fa-layer-group mr-1.5 text-brand-blue"></i>
+                <span data-i18n="s5_tag">Renovatie</span>
+              </div>
+            </div>
+            <div class="p-6 flex-1 flex flex-col justify-between">
+              <div>
+                <h3 class="font-serif text-xl font-bold text-brand-dark dark:text-white mb-2 group-hover:text-brand-blue transition-colors" data-i18n="s5_title">
+                  Gyprocwerken, Tussenwanden & Mortex
+                </h3>
+                <p class="text-slate-600 dark:text-slate-300 text-sm leading-relaxed mb-4" data-i18n="s5_desc">
+                  Herinrichting van woonruimtes, studentenkoten en kantoren met akoestische scheidingswanden, verlaagde plafonds en naadloze Mortex pleistertechnieken voor vloeren en wanden.
+                </p>
+                <ul class="text-xs text-slate-500 dark:text-slate-400 space-y-1.5 mb-6">
+                  <li class="flex items-center gap-2"><i class="fa-solid fa-check text-brand-blue"></i> <span data-i18n="s5_f1">Geluidsisolerende wanden (studs)</span></li>
+                  <li class="flex items-center gap-2"><i class="fa-solid fa-check text-brand-blue"></i> <span data-i18n="s5_f2">Schilderklaar uitplamuren (Q3/Q4)</span></li>
+                  <li class="flex items-center gap-2"><i class="fa-solid fa-check text-brand-blue"></i> <span data-i18n="s5_f3">Mortex betonstuc voor badkamer & vloer</span></li>
+                </ul>
+              </div>
+              <button onclick="prefillFunnel('Gyproc')" class="text-xs font-bold text-brand-blue uppercase tracking-wider flex items-center gap-1.5 hover:gap-2.5 transition-all">
+                <span data-i18n="s_btn">Offerte voor Gyproc & Mortex</span>
+                <i class="fa-solid fa-chevron-right text-[10px]"></i>
+              </button>
+            </div>
+          </div>
+
+          <!-- Dienst 6: Badkamer- & Totaalrenovaties (Foto van astschilder.be/diensten) -->
+          <div class="group bg-brand-canvas dark:bg-[#0D1E36] rounded-2xl overflow-hidden border border-brand-border dark:border-slate-800 hover:shadow-luxury hover:border-brand-blue/50 transition-all duration-300 flex flex-col">
+            <div class="relative h-60 overflow-hidden bg-slate-200 dark:bg-slate-800">
+              <img src="https://static.wixstatic.com/media/cb6ad0_ba7cca17ae684d4dac03ae7ed5aae2e3~mv2.jpg/v1/fill/w_800,h_600,al_c,q_85/badkamerrenovatie.jpg" 
+                   alt="Badkamerrenovatie A.S.T." 
+                   class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500">
+              <div class="absolute top-4 left-4 bg-brand-dark/85 backdrop-blur-md px-3 py-1 rounded text-white text-xs font-bold">
+                <i class="fa-solid fa-bath mr-1.5 text-brand-blue"></i>
+                <span data-i18n="s6_tag">Totaalconcept</span>
+              </div>
+            </div>
+            <div class="p-6 flex-1 flex flex-col justify-between">
+              <div>
+                <h3 class="font-serif text-xl font-bold text-brand-dark dark:text-white mb-2 group-hover:text-brand-blue transition-colors" data-i18n="s6_title">
+                  Badkamerrenovaties & Interieurmake-overs
+                </h3>
+                <p class="text-slate-600 dark:text-slate-300 text-sm leading-relaxed mb-4" data-i18n="s6_desc">
+                  Van ruwbouw-optimalisatie tot complete afwerking van moderne badkamers, vloeren en sanitair. Eén team, één planning en één verantwoordelijke zaakvoerder.
+                </p>
+                <ul class="text-xs text-slate-500 dark:text-slate-400 space-y-1.5 mb-6">
+                  <li class="flex items-center gap-2"><i class="fa-solid fa-check text-brand-blue"></i> <span data-i18n="s6_f1">Volledig waterdichte inloopdouches</span></li>
+                  <li class="flex items-center gap-2"><i class="fa-solid fa-check text-brand-blue"></i> <span data-i18n="s6_f2">Vloerbekleding & keramische tegels</span></li>
+                  <li class="flex items-center gap-2"><i class="fa-solid fa-check text-brand-blue"></i> <span data-i18n="s6_f3">Afbraak, sanitair en schilderwerk in 1 flow</span></li>
+                </ul>
+              </div>
+              <button onclick="prefillFunnel('Totaalrenovatie')" class="text-xs font-bold text-brand-blue uppercase tracking-wider flex items-center gap-1.5 hover:gap-2.5 transition-all">
+                <span data-i18n="s_btn">Offerte voor badkamer / totaalproject</span>
+                <i class="fa-solid fa-chevron-right text-[10px]"></i>
+              </button>
+            </div>
+          </div>
+
+          <!-- Dienst 7: Waterdichtingswerken & Hydrofuge (Foto van astschilder.be/diensten) -->
+          <div class="group bg-brand-canvas dark:bg-[#0D1E36] rounded-2xl overflow-hidden border border-brand-border dark:border-slate-800 hover:shadow-luxury hover:border-brand-blue/50 transition-all duration-300 flex flex-col">
+            <div class="relative h-60 overflow-hidden bg-slate-200 dark:bg-slate-800">
+              <img src="https://static.wixstatic.com/media/cb6ad0_ce889156f21c4f4885e5429e3277901a~mv2.jpeg/v1/fill/w_800,h_600,al_c,q_85/hydrofuge.jpeg" 
+                   alt="Waterdichtingswerken en Hydrofuge A.S.T." 
+                   class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500">
+              <div class="absolute top-4 left-4 bg-brand-dark/85 backdrop-blur-md px-3 py-1 rounded text-white text-xs font-bold">
+                <i class="fa-solid fa-droplet-slash mr-1.5 text-brand-blue"></i>
+                <span data-i18n="s7_tag">Waterdichting</span>
+              </div>
+            </div>
+            <div class="p-6 flex-1 flex flex-col justify-between">
+              <div>
+                <h3 class="font-serif text-xl font-bold text-brand-dark dark:text-white mb-2 group-hover:text-brand-blue transition-colors" data-i18n="s7_title">
+                  Vochtbestrijding & Gevelhydrofuge
+                </h3>
+                <p class="text-slate-600 dark:text-slate-300 text-sm leading-relaxed mb-4" data-i18n="s7_desc">
+                  Definitieve behandeling van opstijgend vocht en geveldoorslag via professionele gel-injecties en kleurloze ademende hydrofuge coatings.
+                </p>
+                <ul class="text-xs text-slate-500 dark:text-slate-400 space-y-1.5 mb-6">
+                  <li class="flex items-center gap-2"><i class="fa-solid fa-check text-brand-blue"></i> <span data-i18n="s7_f1">Muurinjecties met certificaat</span></li>
+                  <li class="flex items-center gap-2"><i class="fa-solid fa-check text-brand-blue"></i> <span data-i18n="s7_f2">Kelderbekuiping & waterdichte mortels</span></li>
+                  <li class="flex items-center gap-2"><i class="fa-solid fa-check text-brand-blue"></i> <span data-i18n="s7_f3">Gevelimpregnering tegen vorstschade</span></li>
+                </ul>
+              </div>
+              <button onclick="prefillFunnel('Vochtbestrijding')" class="text-xs font-bold text-brand-blue uppercase tracking-wider flex items-center gap-1.5 hover:gap-2.5 transition-all">
+                <span data-i18n="s_btn">Offerte voor waterdichting</span>
+                <i class="fa-solid fa-chevron-right text-[10px]"></i>
+              </button>
+            </div>
+          </div>
+
+          <!-- Dienst 8: Dakontmossing & Dakgoten (Foto van astschilder.be/diensten) -->
+          <div class="group bg-brand-canvas dark:bg-[#0D1E36] rounded-2xl overflow-hidden border border-brand-border dark:border-slate-800 hover:shadow-luxury hover:border-brand-blue/50 transition-all duration-300 flex flex-col">
+            <div class="relative h-60 overflow-hidden bg-slate-200 dark:bg-slate-800">
+              <img src="https://static.wixstatic.com/media/cb6ad0_5457f95c7f2845119256b3f89242f6fd~mv2.jpeg/v1/fill/w_800,h_600,al_c,q_85/dakonderhoud.jpeg" 
+                   alt="Dakonderhoud en dakgoten A.S.T." 
+                   class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500">
+              <div class="absolute top-4 left-4 bg-brand-dark/85 backdrop-blur-md px-3 py-1 rounded text-white text-xs font-bold">
+                <i class="fa-solid fa-shield-halved mr-1.5 text-brand-blue"></i>
+                <span data-i18n="s8_tag">Daken & Goten</span>
+              </div>
+            </div>
+            <div class="p-6 flex-1 flex flex-col justify-between">
+              <div>
+                <h3 class="font-serif text-xl font-bold text-brand-dark dark:text-white mb-2 group-hover:text-brand-blue transition-colors" data-i18n="s8_title">
+                  Onderhoud Daken, Ontmossen & Dakgoten
+                </h3>
+                <p class="text-slate-600 dark:text-slate-300 text-sm leading-relaxed mb-4" data-i18n="s8_desc">
+                  Reiniging en beschermende coating voor dakpannen en leien, herstellen of vernieuwen van zinken dakgoten en afvoeren om lekkages voor te zijn.
+                </p>
+                <ul class="text-xs text-slate-500 dark:text-slate-400 space-y-1.5 mb-6">
+                  <li class="flex items-center gap-2"><i class="fa-solid fa-check text-brand-blue"></i> <span data-i18n="s8_f1">Mos- en algenverwijdering met nabehandeling</span></li>
+                  <li class="flex items-center gap-2"><i class="fa-solid fa-check text-brand-blue"></i> <span data-i18n="s8_f2">Herstelling en soldeerwerk dakgoten</span></li>
+                  <li class="flex items-center gap-2"><i class="fa-solid fa-check text-brand-blue"></i> <span data-i18n="s8_f3">Voorkomt waterschade in de gevel</span></li>
+                </ul>
+              </div>
+              <button onclick="prefillFunnel('Dakwerken')" class="text-xs font-bold text-brand-blue uppercase tracking-wider flex items-center gap-1.5 hover:gap-2.5 transition-all">
+                <span data-i18n="s_btn">Offerte voor dak & goten</span>
+                <i class="fa-solid fa-chevron-right text-[10px]"></i>
+              </button>
+            </div>
+          </div>
+
+          <!-- Dienst 9: Schadedossiers Verzekering & Expertises (Foto van astschilder.be/diensten) -->
+          <div class="group bg-brand-canvas dark:bg-[#0D1E36] rounded-2xl overflow-hidden border border-brand-border dark:border-slate-800 hover:shadow-luxury hover:border-brand-blue/50 transition-all duration-300 flex flex-col">
+            <div class="relative h-60 overflow-hidden bg-slate-200 dark:bg-slate-800">
+              <img src="https://static.wixstatic.com/media/cb6ad0_1efed099eb774b7d8f18c539f6935d6a~mv2.jpg/v1/fill/w_800,h_600,al_c,q_85/schadedossiers.jpg" 
+                   alt="Expertise en Schadedossiers A.S.T." 
+                   class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500">
+              <div class="absolute top-4 left-4 bg-brand-dark/85 backdrop-blur-md px-3 py-1 rounded text-white text-xs font-bold">
+                <i class="fa-solid fa-file-shield mr-1.5 text-brand-blue"></i>
+                <span data-i18n="s9_tag">Expertises</span>
+              </div>
+            </div>
+            <div class="p-6 flex-1 flex flex-col justify-between">
+              <div>
+                <h3 class="font-serif text-xl font-bold text-brand-dark dark:text-white mb-2 group-hover:text-brand-blue transition-colors" data-i18n="s9_title">
+                  Waterschade & Verzekeringsdossiers
+                </h3>
+                <p class="text-slate-600 dark:text-slate-300 text-sm leading-relaxed mb-4" data-i18n="s9_desc">
+                  Heeft u waterschade opgelopen door een lekkage of overstroming? A.S.T. stelt gedetailleerde bestekken op voor uw verzekeringsexpert en voert het complete herstel uit.
+                </p>
+                <ul class="text-xs text-slate-500 dark:text-slate-400 space-y-1.5 mb-6">
+                  <li class="flex items-center gap-2"><i class="fa-solid fa-check text-brand-blue"></i> <span data-i18n="s9_f1">Officieel bestek conform verzekeringsnormen</span></li>
+                  <li class="flex items-center gap-2"><i class="fa-solid fa-check text-brand-blue"></i> <span data-i18n="s9_f2">Snelle noodinterventie & droging</span></li>
+                  <li class="flex items-center gap-2"><i class="fa-solid fa-check text-brand-blue"></i> <span data-i18n="s9_f3">Vollédige herstelwerken onder één dak</span></li>
+                </ul>
+              </div>
+              <button onclick="prefillFunnel('Waterschade')" class="text-xs font-bold text-brand-blue uppercase tracking-wider flex items-center gap-1.5 hover:gap-2.5 transition-all">
+                <span data-i18n="s_btn">Aanvraag schade-expertise</span>
+                <i class="fa-solid fa-chevron-right text-[10px]"></i>
+              </button>
+            </div>
+          </div>
+
+        </div>
+
+      </div>
+    </section>
+
+    <!-- INTERACTIVE BEFORE & AFTER SLIDER (Portfolio Showcase) -->
+    <section id="realisaties" class="py-24 bg-brand-dark text-white relative">
+      <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+        
+        <div class="text-center max-w-3xl mx-auto mb-12">
+          <span class="text-xs font-bold uppercase tracking-widest text-brand-blue" data-i18n="ba_kicker">Meesterschap in Beeld</span>
+          <h2 class="font-serif text-3xl sm:text-4xl font-bold text-white mt-2 mb-4" data-i18n="ba_title">
+            De A.S.T. Transformatie: Bekijk het verschil.
+          </h2>
+          <p class="text-slate-400 text-sm leading-relaxed" data-i18n="ba_intro">
+            Sleep de schuifregelaar van links naar rechts om het resultaat van onze diepgaande voorbereiding en hoogwaardige lakafwerking te zien.
+          </p>
+
+          <!-- Project Selector Tabs in AST Blue -->
+          <div class="inline-flex p-1.5 bg-slate-900 border border-slate-800 rounded-xl mt-8 gap-2">
+            <button onclick="switchComparisonProject('herenhuis')" id="tab-herenhuis" class="px-4 py-2 text-xs font-bold rounded-lg bg-brand-blue text-white transition-all shadow">
+              <span data-i18n="ba_p1">Herenwoning Leuven</span>
+            </button>
+            <button onclick="switchComparisonProject('villa')" id="tab-villa" class="px-4 py-2 text-xs font-semibold rounded-lg text-slate-400 hover:text-white transition-all">
+              <span data-i18n="ba_p2">Villa Gevelrenovatie</span>
+            </button>
+            <button onclick="switchComparisonProject('keuken')" id="tab-keuken" class="px-4 py-2 text-xs font-semibold rounded-lg text-slate-400 hover:text-white transition-all">
+              <span data-i18n="ba_p3">Design Lakspuitwerk</span>
+            </button>
+          </div>
+        </div>
+
+        <!-- Before-After Slider Container with AST Blue Accents -->
+        <div class="max-w-4xl mx-auto bg-slate-900 p-2 sm:p-4 rounded-3xl border border-slate-800 shadow-2xl">
+          <div id="ba-container" class="slider-container relative rounded-2xl h-[380px] sm:h-[500px] w-full cursor-ew-resize">
+            
+            <!-- After Image (Base) -->
+            <img id="img-after" 
+                 src="https://images.unsplash.com/photo-1600585154340-be6161a56a0c?auto=format&fit=crop&w=1400&q=80" 
+                 alt="Na renovatie - A.S.T. Schilderwerken" 
+                 class="absolute inset-0 w-full h-full object-cover">
+            
+            <!-- Badge After -->
+            <div class="absolute top-4 right-4 z-20 bg-brand-dark/90 backdrop-blur-md px-3.5 py-1.5 rounded-lg border border-brand-blue/50 text-sky-400 text-xs font-bold tracking-widest uppercase shadow">
+              <span data-i18n="ba_after_label">NA: A.S.T. AFWERKING</span>
+            </div>
+
+            <!-- Before Image (Clipped via clip-path) -->
+            <img id="img-before" 
+                 src="https://images.unsplash.com/photo-1513694203232-719a280e022f?auto=format&fit=crop&w=1400&q=80" 
+                 alt="Voor renovatie - Oude staat" 
+                 class="absolute inset-0 w-full h-full object-cover z-10 filter brightness-90 contrast-95 grayscale-[0.2]"
+                 style="clip-path: inset(0 50% 0 0);">
+
+            <!-- Badge Before -->
+            <div class="absolute top-4 left-4 z-20 bg-black/80 backdrop-blur-md px-3.5 py-1.5 rounded-lg border border-slate-700 text-slate-300 text-xs font-bold tracking-widest uppercase">
+              <span data-i18n="ba_before_label">VOOR: VERWEERD</span>
+            </div>
+
+            <!-- Divider Line & Handle in AST Blue -->
+            <div id="slider-line" class="absolute top-0 bottom-0 w-1 bg-brand-blue shadow-[0_0_15px_rgba(0,136,203,0.9)] z-20 pointer-events-none" style="left: 50%;">
+              <div class="absolute top-1/2 -translate-y-1/2 -translate-x-1/2 w-11 h-11 rounded-full bg-brand-blue border-2 border-white flex items-center justify-center text-white shadow-2xl">
+                <i class="fa-solid fa-arrows-left-right text-xs"></i>
+              </div>
+            </div>
+
+            <!-- Invisible range input covering the slider for accessibility & touch -->
+            <input type="range" min="0" max="100" value="50" id="slider-range" 
+                   class="absolute inset-0 w-full h-full opacity-0 cursor-ew-resize z-30 m-0 p-0" 
+                   aria-label="Vergelijk voor en na renovatie">
+
+          </div>
+
+          <!-- Project Description Bar below slider -->
+          <div class="mt-4 px-4 py-3 flex flex-col sm:flex-row justify-between items-center text-xs text-slate-400 gap-2">
+            <div class="flex items-center gap-2">
+              <i class="fa-solid fa-location-dot text-brand-blue"></i>
+              <span id="project-detail-text">Herenwoning Kessel-Lo: Volledige vliesbehangtechniek & plafondrestauratie. 5 jaar schriftelijke garantie toegekend.</span>
+            </div>
+            <div class="text-slate-500 font-mono">
+              <span data-i18n="ba_drag_hint">↔ Versleep de slider om te vergelijken</span>
+            </div>
+          </div>
+        </div>
+
+      </div>
+    </section>
+
+    <!-- 4 TO 6 YEAR WARRANTY SPOTLIGHT (The Reassurance Engine) -->
+    <section id="garantie" class="py-24 bg-brand-canvas dark:bg-[#07111E] relative overflow-hidden transition-colors">
+      <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+        
+        <div class="bg-gradient-to-br from-brand-navy via-brand-dark to-slate-900 rounded-3xl p-8 sm:p-14 text-white border-2 border-brand-blue/30 shadow-2xl relative">
+          
+          <div class="grid grid-cols-1 lg:grid-cols-12 gap-10 items-center">
+            
+            <div class="lg:col-span-7">
+              <div class="inline-flex items-center gap-2 px-3 py-1 rounded-full bg-brand-blue/20 border border-brand-blue/40 text-sky-400 text-xs font-bold uppercase tracking-wider mb-6">
+                <i class="fa-solid fa-shield-halved"></i>
+                <span data-i18n="warranty_badge">Ongeëvenaard in Vlaanderen</span>
+              </div>
+
+              <h2 class="font-serif text-3xl sm:text-4xl lg:text-5xl font-bold tracking-tight mb-6" data-i18n="warranty_title">
+                Onze 4 tot 6 Jaar Schriftelijke Garantie. Geen kleine lettertjes.
+              </h2>
+
+              <p class="text-slate-300 text-base leading-relaxed mb-8" data-i18n="warranty_p1">
+                Veel schilders beloven mondeling dat "alles goed komt", maar verdwijnen wanneer na één winter de eerste verflagen loslaten. Bij A.S.T. ontvangt u bij oplevering een officieel getekend <strong class="text-white">Garantiecertificaat</strong> op naam van uw woning.
+              </p>
+
+              <div class="grid grid-cols-1 sm:grid-cols-2 gap-4 mb-8">
+                <div class="flex items-start gap-3">
+                  <div class="w-8 h-8 rounded-full bg-brand-blue/20 text-brand-blue flex items-center justify-center shrink-0 mt-0.5">
+                    <i class="fa-solid fa-check text-xs"></i>
+                  </div>
+                  <div>
+                    <h4 class="font-bold text-sm text-white" data-i18n="w_item1_title">Hechtingsgarantie</h4>
+                    <p class="text-xs text-slate-400" data-i18n="w_item1_desc">Geen bladdervorming of afschilfering</p>
+                  </div>
+                </div>
+
+                <div class="flex items-start gap-3">
+                  <div class="w-8 h-8 rounded-full bg-brand-blue/20 text-brand-blue flex items-center justify-center shrink-0 mt-0.5">
+                    <i class="fa-solid fa-check text-xs"></i>
+                  </div>
+                  <div>
+                    <h4 class="font-bold text-sm text-white" data-i18n="w_item2_title">UV- & Kleurvastheid</h4>
+                    <p class="text-xs text-slate-400" data-i18n="w_item2_desc">Behoud van glansgraad en diepe pigmentatie</p>
+                  </div>
+                </div>
+
+                <div class="flex items-start gap-3">
+                  <div class="w-8 h-8 rounded-full bg-brand-blue/20 text-brand-blue flex items-center justify-center shrink-0 mt-0.5">
+                    <i class="fa-solid fa-check text-xs"></i>
+                  </div>
+                  <div>
+                    <h4 class="font-bold text-sm text-white" data-i18n="w_item3_title">Vocht- & Schimmelwering</h4>
+                    <p class="text-xs text-slate-400" data-i18n="w_item3_desc">Permanente microporeuze ademing van muren</p>
+                  </div>
+                </div>
+
+                <div class="flex items-start gap-3">
+                  <div class="w-8 h-8 rounded-full bg-brand-blue/20 text-brand-blue flex items-center justify-center shrink-0 mt-0.5">
+                    <i class="fa-solid fa-check text-xs"></i>
+                  </div>
+                  <div>
+                    <h4 class="font-bold text-sm text-white" data-i18n="w_item4_title">Directe Werfopvolging</h4>
+                    <p class="text-xs text-slate-400" data-i18n="w_item4_desc">Inspectie door dhr. Vandevenne persoonlijk</p>
+                  </div>
+                </div>
+              </div>
+
+              <div class="p-4 rounded-xl bg-slate-900/90 border border-slate-800 text-xs text-slate-300 flex items-center gap-3">
+                <i class="fa-solid fa-signature text-2xl text-brand-blue shrink-0"></i>
+                <span data-i18n="warranty_quote">
+                  "Wij hanteren hogere standaarden dan gebruikelijk in onze branche. Daarom durven wij u deze garantie schriftelijk toe te vertrouwen." — <em>Jeroen Vandevenne, Zaakvoerder</em>
+                </span>
+              </div>
+            </div>
+
+            <!-- Visual Certificate Mockup with AST Logo -->
+            <div class="lg:col-span-5 flex justify-center">
+              <div class="w-full max-w-sm bg-white text-slate-900 p-6 rounded-2xl shadow-2xl border-4 border-brand-blue/50 relative transform hover:rotate-1 transition-transform">
+                <div class="border-2 border-slate-200 p-5 rounded-lg flex flex-col items-center text-center">
+                  
+                  <img src="logo.png" alt="A.S.T. Logo" class="h-10 w-auto mb-2 filter drop-shadow-sm">
+                  
+                  <h3 class="font-serif font-black text-lg tracking-wider uppercase text-brand-dark">A.S.T. Certificaat</h3>
+                  <p class="text-[10px] tracking-widest uppercase text-brand-blue font-bold mb-4">Schriftelijk Kwaliteitsgarantiebewijs</p>
+                  
+                  <div class="w-full text-left space-y-2 text-xs py-3 border-y border-slate-200 mb-4 font-mono">
+                    <div class="flex justify-between">
+                      <span class="text-slate-500">Garantietermijn:</span>
+                      <span class="font-bold text-brand-blue">4 TOT 6 JAAR</span>
+                    </div>
+                    <div class="flex justify-between">
+                      <span class="text-slate-500">Dekkingsgraad:</span>
+                      <span class="font-bold text-emerald-600">100% Volledig</span>
+                    </div>
+                    <div class="flex justify-between">
+                      <span class="text-slate-500">Verfsysteem:</span>
+                      <span class="font-bold text-slate-800">Sikkens / Boss Pro</span>
+                    </div>
+                    <div class="flex justify-between">
+                      <span class="text-slate-500">Inspectie:</span>
+                      <span class="font-bold text-slate-800">J. Vandevenne</span>
+                    </div>
+                  </div>
+
+                  <div class="flex items-center justify-center gap-2 text-[11px] font-semibold text-slate-600">
+                    <i class="fa-solid fa-stamp text-brand-blue"></i>
+                    <span>Erkend Meesterschap sedert 1989</span>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+          </div>
+
+        </div>
+
+      </div>
+    </section>
+
+    <!-- MULTI-STEP CONVERSATION QUOTATION FUNNEL -->
+    <section id="offerte-funnel" class="py-24 bg-brand-surface dark:bg-[#0A1628] relative border-t border-brand-border dark:border-slate-800 transition-colors">
+      <div class="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8">
+        
+        <div class="text-center max-w-2xl mx-auto mb-12">
+          <span class="text-xs font-bold uppercase tracking-widest text-brand-blue" data-i18n="funnel_kicker">Eenvoudig & Vrijblijvend</span>
+          <h2 class="font-serif text-3xl sm:text-4xl font-bold text-brand-dark dark:text-white mt-2 mb-3" data-i18n="funnel_title">
+            Bereken uw project & vraag gratis advies aan.
+          </h2>
+          <p class="text-slate-600 dark:text-slate-300 text-sm leading-relaxed" data-i18n="funnel_subtitle">
+            In 3 overzichtelijke stappen naar een gedetailleerd richtbestek. Geen verplichtingen, inclusief gratis inspectie op locatie door de zaakvoerder.
+          </p>
+        </div>
+
+        <!-- Wizard Card in Clean White & Slate -->
+        <div class="bg-brand-canvas dark:bg-[#0D1E36] border border-brand-border dark:border-slate-700 rounded-3xl p-6 sm:p-10 shadow-luxury relative overflow-hidden transition-colors">
+          
+          <!-- Funnel Progress Stepper -->
+          <div class="flex items-center justify-between mb-8 pb-6 border-b border-brand-border dark:border-slate-700">
+            
+            <!-- Step 1 Indicator -->
+            <div class="flex items-center gap-3">
+              <div id="step-indicator-1" class="w-8 h-8 rounded-full bg-brand-blue text-white font-bold text-xs flex items-center justify-center shadow transition-all">
+                1
+              </div>
+              <div class="hidden sm:block text-left">
+                <span class="text-[10px] uppercase font-bold text-slate-400 block" data-i18n="funnel_step1_label">Stap 1</span>
+                <span class="text-xs font-bold text-brand-dark dark:text-white" data-i18n="funnel_step1_name">Type Werken</span>
+              </div>
+            </div>
+
+            <!-- Divider line -->
+            <div id="divider-1-2" class="flex-1 h-0.5 mx-4 bg-brand-border dark:bg-slate-700 transition-all"></div>
+
+            <!-- Step 2 Indicator -->
+            <div class="flex items-center gap-3">
+              <div id="step-indicator-2" class="w-8 h-8 rounded-full bg-slate-200 dark:bg-slate-700 text-slate-600 dark:text-slate-300 font-bold text-xs flex items-center justify-center transition-all">
+                2
+              </div>
+              <div class="hidden sm:block text-left">
+                <span class="text-[10px] uppercase font-bold text-slate-400 block" data-i18n="funnel_step2_label">Stap 2</span>
+                <span class="text-xs font-bold text-slate-500 dark:text-slate-400" data-i18n="funnel_step2_name">Pand & Timing</span>
+              </div>
+            </div>
+
+            <!-- Divider line -->
+            <div id="divider-2-3" class="flex-1 h-0.5 mx-4 bg-brand-border dark:bg-slate-700 transition-all"></div>
+
+            <!-- Step 3 Indicator -->
+            <div class="flex items-center gap-3">
+              <div id="step-indicator-3" class="w-8 h-8 rounded-full bg-slate-200 dark:bg-slate-700 text-slate-600 dark:text-slate-300 font-bold text-xs flex items-center justify-center transition-all">
+                3
+              </div>
+              <div class="hidden sm:block text-left">
+                <span class="text-[10px] uppercase font-bold text-slate-400 block" data-i18n="funnel_step3_label">Stap 3</span>
+                <span class="text-xs font-bold text-slate-500 dark:text-slate-400" data-i18n="funnel_step3_name">Contact & Afspraak</span>
+              </div>
+            </div>
+
+          </div>
+
+          <!-- Wizard Form Element -->
+          <form id="funnel-form" onsubmit="handleFunnelSubmit(event)">
+            
+            <!-- STAP 1: Type Werken (Interactive Cards with All AST Services) -->
+            <div id="funnel-step-1" class="step-fade step-active">
+              <h3 class="font-serif text-xl font-bold text-brand-dark dark:text-white mb-2" data-i18n="f_s1_heading">
+                Welke werken wilt u laten uitvoeren?
+              </h3>
+              <p class="text-xs text-slate-500 dark:text-slate-400 mb-6" data-i18n="f_s1_instruction">
+                Selecteer één of meerdere disciplines voor uw project:
+              </p>
+
+              <div class="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-3.5 mb-8">
+                
+                <!-- Option 1: Binnenschilderwerk -->
+                <label class="funnel-option relative flex items-start gap-3 p-3.5 rounded-xl border-2 border-brand-border dark:border-slate-700 bg-brand-surface dark:bg-[#091526] hover:border-brand-blue cursor-pointer transition-all">
+                  <input type="checkbox" name="work_type" value="Binnenschilderwerk" class="mt-1 accent-brand-blue rounded w-4 h-4" checked onchange="updateOptionStyle(this)">
+                  <div>
+                    <div class="font-bold text-xs sm:text-sm text-brand-dark dark:text-white flex items-center gap-1.5">
+                      <i class="fa-solid fa-paint-roller text-brand-blue text-xs"></i>
+                      <span data-i18n="f_opt_interior">Binnenschilderwerk</span>
+                    </div>
+                    <p class="text-[11px] text-slate-500 dark:text-slate-400 mt-0.5" data-i18n="f_opt_interior_desc">Muren, plafonds, houtwerk, plamuurwerk</p>
+                  </div>
+                </label>
+
+                <!-- Option 2: Buitenschilderwerk -->
+                <label class="funnel-option relative flex items-start gap-3 p-3.5 rounded-xl border-2 border-brand-border dark:border-slate-700 bg-brand-surface dark:bg-[#091526] hover:border-brand-blue cursor-pointer transition-all">
+                  <input type="checkbox" name="work_type" value="Buitenschilderwerk" class="mt-1 accent-brand-blue rounded w-4 h-4" onchange="updateOptionStyle(this)">
+                  <div>
+                    <div class="font-bold text-xs sm:text-sm text-brand-dark dark:text-white flex items-center gap-1.5">
+                      <i class="fa-solid fa-building text-brand-blue text-xs"></i>
+                      <span data-i18n="f_opt_exterior">Buitenschilderwerk</span>
+                    </div>
+                    <p class="text-[11px] text-slate-500 dark:text-slate-400 mt-0.5" data-i18n="f_opt_exterior_desc">Gevels, ramen, deuren, kaleiwerken</p>
+                  </div>
+                </label>
+
+                <!-- Option 3: Houten Ramen & Deuren -->
+                <label class="funnel-option relative flex items-start gap-3 p-3.5 rounded-xl border-2 border-brand-border dark:border-slate-700 bg-brand-surface dark:bg-[#091526] hover:border-brand-blue cursor-pointer transition-all">
+                  <input type="checkbox" name="work_type" value="RamenEnDeuren" class="mt-1 accent-brand-blue rounded w-4 h-4" onchange="updateOptionStyle(this)">
+                  <div>
+                    <div class="font-bold text-xs sm:text-sm text-brand-dark dark:text-white flex items-center gap-1.5">
+                      <i class="fa-solid fa-door-open text-brand-blue text-xs"></i>
+                      <span data-i18n="f_opt_windows">Ramen & Deuren</span>
+                    </div>
+                    <p class="text-[11px] text-slate-500 dark:text-slate-400 mt-0.5" data-i18n="f_opt_windows_desc">Herstel, schuren, lakspuitwerk & UV-lak</p>
+                  </div>
+                </label>
+
+                <!-- Option 4: Vochtbestrijding & Waterdichting -->
+                <label class="funnel-option relative flex items-start gap-3 p-3.5 rounded-xl border-2 border-brand-border dark:border-slate-700 bg-brand-surface dark:bg-[#091526] hover:border-brand-blue cursor-pointer transition-all">
+                  <input type="checkbox" name="work_type" value="Vochtbestrijding" class="mt-1 accent-brand-blue rounded w-4 h-4" onchange="updateOptionStyle(this)">
+                  <div>
+                    <div class="font-bold text-xs sm:text-sm text-brand-dark dark:text-white flex items-center gap-1.5">
+                      <i class="fa-solid fa-droplet-slash text-brand-blue text-xs"></i>
+                      <span data-i18n="f_opt_moisture">Waterdichting & Vocht</span>
+                    </div>
+                    <p class="text-[11px] text-slate-500 dark:text-slate-400 mt-0.5" data-i18n="f_opt_moisture_desc">Kelderdichting, opstijgend vocht, hydrofuge</p>
+                  </div>
+                </label>
+
+                <!-- Option 5: Gyprocwerken & Tussenwanden -->
+                <label class="funnel-option relative flex items-start gap-3 p-3.5 rounded-xl border-2 border-brand-border dark:border-slate-700 bg-brand-surface dark:bg-[#091526] hover:border-brand-blue cursor-pointer transition-all">
+                  <input type="checkbox" name="work_type" value="Gyproc" class="mt-1 accent-brand-blue rounded w-4 h-4" onchange="updateOptionStyle(this)">
+                  <div>
+                    <div class="font-bold text-xs sm:text-sm text-brand-dark dark:text-white flex items-center gap-1.5">
+                      <i class="fa-solid fa-layer-group text-brand-blue text-xs"></i>
+                      <span data-i18n="f_opt_gyproc">Gyproc & Tussenwanden</span>
+                    </div>
+                    <p class="text-[11px] text-slate-500 dark:text-slate-400 mt-0.5" data-i18n="f_opt_gyproc_desc">Plafonds, scheidingswanden & isolatie</p>
+                  </div>
+                </label>
+
+                <!-- Option 6: Totaalrenovatie & Badkamers -->
+                <label class="funnel-option relative flex items-start gap-3 p-3.5 rounded-xl border-2 border-brand-border dark:border-slate-700 bg-brand-surface dark:bg-[#091526] hover:border-brand-blue cursor-pointer transition-all">
+                  <input type="checkbox" name="work_type" value="Totaalrenovatie" class="mt-1 accent-brand-blue rounded w-4 h-4" onchange="updateOptionStyle(this)">
+                  <div>
+                    <div class="font-bold text-xs sm:text-sm text-brand-dark dark:text-white flex items-center gap-1.5">
+                      <i class="fa-solid fa-hammer text-brand-blue text-xs"></i>
+                      <span data-i18n="f_opt_reno">Totaalrenovatie</span>
+                    </div>
+                    <p class="text-[11px] text-slate-500 dark:text-slate-400 mt-0.5" data-i18n="f_opt_reno_desc">Badkamers, Mortex, vloeren & interieur</p>
+                  </div>
+                </label>
+
+                <!-- Option 7: Dakonderhoud & Dakgoten -->
+                <label class="funnel-option relative flex items-start gap-3 p-3.5 rounded-xl border-2 border-brand-border dark:border-slate-700 bg-brand-surface dark:bg-[#091526] hover:border-brand-blue cursor-pointer transition-all">
+                  <input type="checkbox" name="work_type" value="Dakwerken" class="mt-1 accent-brand-blue rounded w-4 h-4" onchange="updateOptionStyle(this)">
+                  <div>
+                    <div class="font-bold text-xs sm:text-sm text-brand-dark dark:text-white flex items-center gap-1.5">
+                      <i class="fa-solid fa-house-chimney-window text-brand-blue text-xs"></i>
+                      <span data-i18n="f_opt_roof">Daken & Dakgoten</span>
+                    </div>
+                    <p class="text-[11px] text-slate-500 dark:text-slate-400 mt-0.5" data-i18n="f_opt_roof_desc">Ontmossen, reinigen & zinkherstellingen</p>
+                  </div>
+                </label>
+
+                <!-- Option 8: Schadedossier Verzekering -->
+                <label class="funnel-option relative flex items-start gap-3 p-3.5 rounded-xl border-2 border-brand-border dark:border-slate-700 bg-brand-surface dark:bg-[#091526] hover:border-brand-blue cursor-pointer transition-all">
+                  <input type="checkbox" name="work_type" value="Waterschade" class="mt-1 accent-brand-blue rounded w-4 h-4" onchange="updateOptionStyle(this)">
+                  <div>
+                    <div class="font-bold text-xs sm:text-sm text-brand-dark dark:text-white flex items-center gap-1.5">
+                      <i class="fa-solid fa-file-shield text-brand-blue text-xs"></i>
+                      <span data-i18n="f_opt_insurance">Waterschadedossier</span>
+                    </div>
+                    <p class="text-[11px] text-slate-500 dark:text-slate-400 mt-0.5" data-i18n="f_opt_insurance_desc">Expertise & bestek voor verzekering</p>
+                  </div>
+                </label>
+
+                <!-- Option 9: Machinaal Lakspuitwerk -->
+                <label class="funnel-option relative flex items-start gap-3 p-3.5 rounded-xl border-2 border-brand-border dark:border-slate-700 bg-brand-surface dark:bg-[#091526] hover:border-brand-blue cursor-pointer transition-all">
+                  <input type="checkbox" name="work_type" value="Lakspuitwerk" class="mt-1 accent-brand-blue rounded w-4 h-4" onchange="updateOptionStyle(this)">
+                  <div>
+                    <div class="font-bold text-xs sm:text-sm text-brand-dark dark:text-white flex items-center gap-1.5">
+                      <i class="fa-solid fa-spray-can text-brand-blue text-xs"></i>
+                      <span data-i18n="f_opt_spray">Lakspuitwerk (Atelier)</span>
+                    </div>
+                    <p class="text-[11px] text-slate-500 dark:text-slate-400 mt-0.5" data-i18n="f_opt_spray_desc">Keukens, radiatoren, trappen, deuren</p>
+                  </div>
+                </label>
+
+              </div>
+
+              <div class="flex justify-end">
+                <button type="button" onclick="goToStep(2)" class="px-7 py-3.5 rounded-lg bg-brand-blue hover:bg-brand-blue-hover text-white text-xs font-bold uppercase tracking-wider transition-all flex items-center gap-2 shadow-md">
+                  <span data-i18n="f_btn_next">Volgende Stap: Pand & Timing</span>
+                  <i class="fa-solid fa-arrow-right text-xs"></i>
+                </button>
+              </div>
+            </div>
+
+            <!-- STAP 2: Type Pand (Inclusief Studentenkoten) & Timing -->
+            <div id="funnel-step-2" class="step-fade step-hidden">
+              <h3 class="font-serif text-xl font-bold text-brand-dark dark:text-white mb-2" data-i18n="f_s2_heading">
+                Over welk type eigendom gaat het?
+              </h3>
+              <p class="text-xs text-slate-500 dark:text-slate-400 mb-6" data-i18n="f_s2_instruction">
+                Dit helpt ons om de juiste werfmethode, stellingen en planning in te schatten:
+              </p>
+
+              <!-- Property Radio Buttons including Studentenkot / Residentie -->
+              <div class="grid grid-cols-2 sm:grid-cols-3 gap-3 mb-6">
+                
+                <!-- Studentenkot Option (Crucial in Leuven!) -->
+                <label class="p-4 rounded-xl border-2 border-brand-border dark:border-slate-700 bg-brand-surface dark:bg-[#091526] hover:border-brand-blue cursor-pointer text-center flex flex-col items-center justify-center gap-2 transition-all">
+                  <input type="radio" name="property_type" value="Studentenkot / Studentenresidentie" class="accent-brand-blue">
+                  <i class="fa-solid fa-graduation-cap text-brand-blue text-xl"></i>
+                  <span class="text-xs font-bold text-brand-dark dark:text-white" data-i18n="f_prop_student">Studentenkot / Residentie</span>
+                </label>
+
+                <label class="p-4 rounded-xl border-2 border-brand-border dark:border-slate-700 bg-brand-surface dark:bg-[#091526] hover:border-brand-blue cursor-pointer text-center flex flex-col items-center justify-center gap-2 transition-all">
+                  <input type="radio" name="property_type" value="Eengezinswoning / Villa" class="accent-brand-blue" checked>
+                  <i class="fa-solid fa-house text-slate-600 dark:text-slate-300 text-lg"></i>
+                  <span class="text-xs font-bold text-brand-dark dark:text-white" data-i18n="f_prop_house">Woning / Villa</span>
+                </label>
+
+                <label class="p-4 rounded-xl border-2 border-brand-border dark:border-slate-700 bg-brand-surface dark:bg-[#091526] hover:border-brand-blue cursor-pointer text-center flex flex-col items-center justify-center gap-2 transition-all">
+                  <input type="radio" name="property_type" value="Appartement / Loft" class="accent-brand-blue">
+                  <i class="fa-solid fa-city text-slate-600 dark:text-slate-300 text-lg"></i>
+                  <span class="text-xs font-bold text-brand-dark dark:text-white" data-i18n="f_prop_app">Appartement</span>
+                </label>
+
+                <label class="p-4 rounded-xl border-2 border-brand-border dark:border-slate-700 bg-brand-surface dark:bg-[#091526] hover:border-brand-blue cursor-pointer text-center flex flex-col items-center justify-center gap-2 transition-all">
+                  <input type="radio" name="property_type" value="Herenhuis / Historisch pand" class="accent-brand-blue">
+                  <i class="fa-solid fa-landmark text-slate-600 dark:text-slate-300 text-lg"></i>
+                  <span class="text-xs font-bold text-brand-dark dark:text-white" data-i18n="f_prop_mansion">Herenhuis</span>
+                </label>
+
+                <label class="p-4 rounded-xl border-2 border-brand-border dark:border-slate-700 bg-brand-surface dark:bg-[#091526] hover:border-brand-blue cursor-pointer text-center flex flex-col items-center justify-center gap-2 transition-all">
+                  <input type="radio" name="property_type" value="Kantoor / Handelszaak" class="accent-brand-blue">
+                  <i class="fa-solid fa-briefcase text-slate-600 dark:text-slate-300 text-lg"></i>
+                  <span class="text-xs font-bold text-brand-dark dark:text-white" data-i18n="f_prop_comm">Bedrijf / Kantoor</span>
+                </label>
+
+                <label class="p-4 rounded-xl border-2 border-brand-border dark:border-slate-700 bg-brand-surface dark:bg-[#091526] hover:border-brand-blue cursor-pointer text-center flex flex-col items-center justify-center gap-2 transition-all">
+                  <input type="radio" name="property_type" value="Mede-eigendom / VME" class="accent-brand-blue">
+                  <i class="fa-solid fa-building-user text-slate-600 dark:text-slate-300 text-lg"></i>
+                  <span class="text-xs font-bold text-brand-dark dark:text-white" data-i18n="f_prop_vme">VME / Traphal</span>
+                </label>
+              </div>
+
+              <!-- Timing Selection -->
+              <h4 class="font-bold text-sm text-brand-dark dark:text-white mb-3" data-i18n="f_timing_title">Gewenste uitvoeringstermijn:</h4>
+              <div class="grid grid-cols-1 sm:grid-cols-3 gap-3 mb-8">
+                <label class="p-3.5 rounded-xl border border-brand-border dark:border-slate-700 bg-brand-surface dark:bg-[#091526] hover:border-brand-blue cursor-pointer flex items-center gap-3 text-xs font-semibold">
+                  <input type="radio" name="timeline" value="Zo snel mogelijk" class="accent-brand-blue" checked>
+                  <span data-i18n="f_time_asap">Zo snel mogelijk (Dringend)</span>
+                </label>
+                <label class="p-3.5 rounded-xl border border-brand-border dark:border-slate-700 bg-brand-surface dark:bg-[#091526] hover:border-brand-blue cursor-pointer flex items-center gap-3 text-xs font-semibold">
+                  <input type="radio" name="timeline" value="Binnen 1 tot 3 maanden" class="accent-brand-blue">
+                  <span data-i18n="f_time_months">Binnen 1 tot 3 maanden</span>
+                </label>
+                <label class="p-3.5 rounded-xl border border-brand-border dark:border-slate-700 bg-brand-surface dark:bg-[#091526] hover:border-brand-blue cursor-pointer flex items-center gap-3 text-xs font-semibold">
+                  <input type="radio" name="timeline" value="Oriënterend / Later dit jaar" class="accent-brand-blue">
+                  <span data-i18n="f_time_later">Oriënterend / Later dit jaar</span>
+                </label>
+              </div>
+
+              <div class="flex justify-between items-center">
+                <button type="button" onclick="goToStep(1)" class="px-5 py-3 rounded-lg border border-slate-300 dark:border-slate-700 text-slate-700 dark:text-slate-300 text-xs font-bold uppercase tracking-wider hover:bg-slate-100 dark:hover:bg-slate-800 transition-all flex items-center gap-2">
+                  <i class="fa-solid fa-arrow-left text-xs"></i>
+                  <span data-i18n="f_btn_prev">Vorige</span>
+                </button>
+                <button type="button" onclick="goToStep(3)" class="px-7 py-3.5 rounded-lg bg-brand-blue hover:bg-brand-blue-hover text-white text-xs font-bold uppercase tracking-wider transition-all flex items-center gap-2 shadow-md">
+                  <span data-i18n="f_btn_next2">Laatste Stap: Contactgegevens</span>
+                  <i class="fa-solid fa-arrow-right text-xs"></i>
+                </button>
+              </div>
+            </div>
+
+            <!-- STAP 3: Contactgegevens & Afspraak (Zonder 'kosteloos') -->
+            <div id="funnel-step-3" class="step-fade step-hidden">
+              <h3 class="font-serif text-xl font-bold text-brand-dark dark:text-white mb-2" data-i18n="f_s3_heading">
+                Waar mogen we het richtbestek naartoe sturen?
+              </h3>
+              <p class="text-xs text-slate-500 dark:text-slate-400 mb-6" data-i18n="f_s3_instruction">
+                Zaakvoerder Jeroen Vandevenne neemt binnen 24 uur contact met u op voor een vrijblijvend advies of plaatsbezoek.
+              </p>
+
+              <div class="grid grid-cols-1 sm:grid-cols-2 gap-4 mb-4">
+                <div>
+                  <label class="block text-xs font-bold text-slate-700 dark:text-slate-300 mb-1" data-i18n="f_label_name">Naam & Voornaam *</label>
+                  <input type="text" id="funnel-name" required placeholder="bijv. Sophie De Smet" data-i18n-placeholder="f_ph_name" class="w-full px-4 py-2.5 rounded-lg border border-brand-border dark:border-slate-700 bg-brand-surface dark:bg-[#091526] text-slate-900 dark:text-white text-sm focus:outline-none focus:border-brand-blue focus:ring-1 focus:ring-brand-blue">
+                </div>
+                <div>
+                  <label class="block text-xs font-bold text-slate-700 dark:text-slate-300 mb-1" data-i18n="f_label_phone">Telefoonnummer *</label>
+                  <input type="tel" id="funnel-phone" required placeholder="bijv. 0498 12 34 56" data-i18n-placeholder="f_ph_phone" class="w-full px-4 py-2.5 rounded-lg border border-brand-border dark:border-slate-700 bg-brand-surface dark:bg-[#091526] text-slate-900 dark:text-white text-sm focus:outline-none focus:border-brand-blue focus:ring-1 focus:ring-brand-blue">
+                </div>
+              </div>
+
+              <div class="grid grid-cols-1 sm:grid-cols-2 gap-4 mb-4">
+                <div>
+                  <label class="block text-xs font-bold text-slate-700 dark:text-slate-300 mb-1" data-i18n="f_label_email">E-mailadres *</label>
+                  <input type="email" id="funnel-email" required placeholder="bijv. sophie@voorbeeld.be" data-i18n-placeholder="f_ph_email" class="w-full px-4 py-2.5 rounded-lg border border-brand-border dark:border-slate-700 bg-brand-surface dark:bg-[#091526] text-slate-900 dark:text-white text-sm focus:outline-none focus:border-brand-blue focus:ring-1 focus:ring-brand-blue">
+                </div>
+                <div>
+                  <label class="block text-xs font-bold text-slate-700 dark:text-slate-300 mb-1" data-i18n="f_label_city">Gemeente / Postcode *</label>
+                  <input type="text" id="funnel-city" required placeholder="bijv. 3000 Leuven" data-i18n-placeholder="f_ph_city" class="w-full px-4 py-2.5 rounded-lg border border-brand-border dark:border-slate-700 bg-brand-surface dark:bg-[#091526] text-slate-900 dark:text-white text-sm focus:outline-none focus:border-brand-blue focus:ring-1 focus:ring-brand-blue">
+                </div>
+              </div>
+
+              <div class="mb-6">
+                <label class="block text-xs font-bold text-slate-700 dark:text-slate-300 mb-1" data-i18n="f_label_notes">Extra toelichting of afmetingen (optioneel)</label>
+                <textarea id="funnel-notes" rows="3" placeholder="Beschrijf eventuele bijzonderheden, oppervlakte of specifieke wensen..." data-i18n-placeholder="f_ph_notes" class="w-full px-4 py-2.5 rounded-lg border border-brand-border dark:border-slate-700 bg-brand-surface dark:bg-[#091526] text-slate-900 dark:text-white text-sm focus:outline-none focus:border-brand-blue focus:ring-1 focus:ring-brand-blue"></textarea>
+              </div>
+
+              <!-- Reassurance Notice -->
+              <div class="p-3.5 rounded-xl bg-blue-50 dark:bg-blue-950/40 border border-blue-200 dark:border-blue-900 text-xs text-slate-700 dark:text-slate-300 flex items-center gap-3 mb-6">
+                <i class="fa-solid fa-lock text-brand-blue text-sm"></i>
+                <span data-i18n="f_privacy">Uw gegevens worden 100% vertrouwelijk behandeld en nooit gedeeld met derden.</span>
+              </div>
+
+              <div class="flex justify-between items-center">
+                <button type="button" onclick="goToStep(2)" class="px-5 py-3 rounded-lg border border-slate-300 dark:border-slate-700 text-slate-700 dark:text-slate-300 text-xs font-bold uppercase tracking-wider hover:bg-slate-100 dark:hover:bg-slate-800 transition-all flex items-center gap-2">
+                  <i class="fa-solid fa-arrow-left text-xs"></i>
+                  <span data-i18n="f_btn_prev">Vorige</span>
+                </button>
+                <!-- Submit button without 'kosteloos' as requested -->
+                <button type="submit" class="px-8 py-3.5 rounded-lg bg-brand-blue hover:bg-brand-blue-hover text-white text-xs font-bold uppercase tracking-wider transition-all flex items-center gap-2 shadow-luxury hover:shadow-luxury-hover">
+                  <i class="fa-solid fa-paper-plane text-xs"></i>
+                  <span data-i18n="f_btn_submit">Aanvraag Verzenden</span>
+                </button>
+              </div>
+            </div>
+
+          </form>
+
+        </div>
+
+      </div>
+    </section>
+
+    <!-- SUCCESS CONFIRMATION MODAL -->
+    <div id="success-modal" class="fixed inset-0 z-50 flex items-center justify-center p-4 bg-brand-dark/80 backdrop-blur-sm hidden">
+      <div class="bg-brand-surface dark:bg-[#0B1A2F] rounded-3xl max-w-lg w-full p-8 border border-brand-border dark:border-slate-700 shadow-2xl relative text-center">
+        <div class="w-16 h-16 rounded-full bg-blue-50 dark:bg-brand-blue/20 text-brand-blue mx-auto flex items-center justify-center text-2xl mb-4 border border-blue-100 dark:border-brand-blue/30">
+          <i class="fa-solid fa-check"></i>
+        </div>
+        <h3 class="font-serif text-2xl font-bold text-brand-dark dark:text-white mb-2" data-i18n="modal_success_title">Hartelijk dank voor uw aanvraag!</h3>
+        <p class="text-slate-600 dark:text-slate-300 text-sm mb-6" data-i18n="modal_success_desc">
+          Wij hebben uw projectgegevens succesvol ontvangen. Zaakvoerder Jeroen Vandevenne analyseert uw aanvraag en neemt binnen 24 uur telefonisch contact op voor een vrijblijvende afspraak.
+        </p>
+        <div class="p-4 rounded-xl bg-brand-canvas dark:bg-[#07111E] border border-brand-border dark:border-slate-800 text-left text-xs space-y-1.5 mb-6">
+          <div class="flex justify-between">
+            <span class="text-slate-500" data-i18n="modal_ref">Referentienummer:</span>
+            <span class="font-mono font-bold text-brand-dark dark:text-white" id="modal-ref-id">#AST-2026-8941</span>
+          </div>
+          <div class="flex justify-between">
+            <span class="text-slate-500" data-i18n="modal_gar">Garantiebescherming:</span>
+            <span class="font-bold text-brand-blue">4 tot 6 Jaar Schriftelijk</span>
+          </div>
+          <div class="flex justify-between">
+            <span class="text-slate-500" data-i18n="modal_contact_person">Behandeld door:</span>
+            <span class="font-bold text-slate-800 dark:text-slate-200">Jeroen Vandevenne (Zaakvoerder)</span>
+          </div>
+        </div>
+        <button onclick="closeSuccessModal()" class="w-full py-3 rounded-lg bg-brand-blue hover:bg-brand-blue-hover text-white text-xs font-bold uppercase tracking-wider transition-all shadow">
+          <span data-i18n="modal_btn_close">Sluiten & Terug naar Website</span>
+        </button>
+      </div>
+    </div>
+
+    <!-- REVIEWS & TESTIMONIALS (Social Proof) -->
+    <section id="reviews" class="py-24 bg-brand-canvas dark:bg-[#07111E] transition-colors">
+      <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+        
+        <div class="text-center max-w-3xl mx-auto mb-16">
+          <span class="text-xs font-bold uppercase tracking-widest text-brand-blue" data-i18n="rev_kicker">Ervaringen van Eigenaars</span>
+          <h2 class="font-serif text-3xl sm:text-4xl font-bold text-brand-dark dark:text-white mt-2 mb-3" data-i18n="rev_title">
+            Wat onze klanten in Leuven en omgeving vertellen.
+          </h2>
+          <div class="flex items-center justify-center gap-2 text-brand-blue text-sm">
+            <div class="flex gap-1 text-amber-400">
+              <i class="fa-solid fa-star"></i>
+              <i class="fa-solid fa-star"></i>
+              <i class="fa-solid fa-star"></i>
+              <i class="fa-solid fa-star"></i>
+              <i class="fa-solid fa-star"></i>
+            </div>
+            <span class="font-bold text-brand-dark dark:text-white text-xs">4.9 / 5.0 (140+ geverifieerde beoordelingen)</span>
+          </div>
+        </div>
+
+        <div class="grid grid-cols-1 md:grid-cols-3 gap-8">
+          
+          <!-- Review 1: Original quote from astschilder.be -->
+          <div class="bg-brand-surface dark:bg-[#0D1E36] p-8 rounded-2xl border border-brand-border dark:border-slate-800 shadow-luxury flex flex-col justify-between hover:border-brand-blue/50 transition-colors">
+            <div>
+              <div class="flex gap-1 text-amber-400 text-xs mb-4">
+                <i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i>
+              </div>
+              <p class="text-slate-700 dark:text-slate-300 text-sm italic leading-relaxed mb-6" data-i18n="rev1_text">
+                "Onze woning ziet er na de doortocht van A.S.T. een pak frisser uit! Er is prachtig schilderwerk geleverd door Robin en de rest van de vaste schilders. Alles piekfijn afgewerkt en geen spatje verf gemorst."
+              </p>
+            </div>
+            <div class="flex items-center gap-3 pt-4 border-t border-slate-100 dark:border-slate-700">
+              <div class="w-10 h-10 rounded-full bg-brand-blue/15 text-brand-blue flex items-center justify-center font-bold text-sm">
+                LD
+              </div>
+              <div>
+                <p class="font-bold text-sm text-brand-dark dark:text-white">Leen Dewil</p>
+                <p class="text-xs text-slate-500 dark:text-slate-400" data-i18n="rev1_loc">Leuven • Binnen- en buitenschilderwerken</p>
+              </div>
+            </div>
+          </div>
+
+          <!-- Review 2 -->
+          <div class="bg-brand-surface dark:bg-[#0D1E36] p-8 rounded-2xl border border-brand-border dark:border-slate-800 shadow-luxury flex flex-col justify-between hover:border-brand-blue/50 transition-colors">
+            <div>
+              <div class="flex gap-1 text-amber-400 text-xs mb-4">
+                <i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i>
+              </div>
+              <p class="text-slate-700 dark:text-slate-300 text-sm italic leading-relaxed mb-6" data-i18n="rev2_text">
+                "Onze gevel had jarenlang last van vocht en afbladderende verf door een eerdere 'goedkope' schilder. A.S.T. heeft eerst een grondige vochtmeting gedaan en een ademend silicaatsysteem geplaatst met 6 jaar schriftelijke garantie. Eindelijk vakmensen die weten wat ze doen."
+              </p>
+            </div>
+            <div class="flex items-center gap-3 pt-4 border-t border-slate-100 dark:border-slate-700">
+              <div class="w-10 h-10 rounded-full bg-brand-blue/15 text-brand-blue flex items-center justify-center font-bold text-sm">
+                MV
+              </div>
+              <div>
+                <p class="font-bold text-sm text-brand-dark dark:text-white">Marc & Valerie Vandeperre</p>
+                <p class="text-xs text-slate-500 dark:text-slate-400" data-i18n="rev2_loc">Tervuren • Gevelrenovatie & Hydrofuge</p>
+              </div>
+            </div>
+          </div>
+
+          <!-- Review 3 -->
+          <div class="bg-brand-surface dark:bg-[#0D1E36] p-8 rounded-2xl border border-brand-border dark:border-slate-800 shadow-luxury flex flex-col justify-between hover:border-brand-blue/50 transition-colors">
+            <div>
+              <div class="flex gap-1 text-amber-400 text-xs mb-4">
+                <i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i>
+              </div>
+              <p class="text-slate-700 dark:text-slate-300 text-sm italic leading-relaxed mb-6" data-i18n="rev3_text">
+                "De binnendeuren en onze keukenkasten zijn met de spuitcabine gedaan: zó glad en strak hadden we het zelf nooit verwacht. De werf werd iedere avond netjes gestofzuigd achtergelaten. Pure stielmannen!"
+              </p>
+            </div>
+            <div class="flex items-center gap-3 pt-4 border-t border-slate-100 dark:border-slate-700">
+              <div class="w-10 h-10 rounded-full bg-brand-blue/15 text-brand-blue flex items-center justify-center font-bold text-sm">
+                EW
+              </div>
+              <div>
+                <p class="font-bold text-sm text-brand-dark dark:text-white">Elisabeth Wouters</p>
+                <p class="text-xs text-slate-500 dark:text-slate-400" data-i18n="rev3_loc">Kessel-Lo • Lakspuitwerk & Totaalafwerking</p>
+              </div>
+            </div>
+          </div>
+
+        </div>
+
+      </div>
+    </section>
+
+    <!-- FAQ SECTION (Accordion) -->
+    <section class="py-20 bg-brand-surface dark:bg-[#0A1628] border-t border-brand-border dark:border-slate-800 transition-colors">
+      <div class="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8">
+        
+        <div class="text-center max-w-2xl mx-auto mb-12">
+          <span class="text-xs font-bold uppercase tracking-widest text-brand-blue" data-i18n="faq_kicker">Duidelijkheid Vooraf</span>
+          <h2 class="font-serif text-3xl font-bold text-brand-dark dark:text-white mt-2 mb-3" data-i18n="faq_title">
+            Veelgestelde vragen over onze werkwijze en garantie.
+          </h2>
+        </div>
+
+        <div class="space-y-4">
+          
+          <!-- FAQ 1 -->
+          <div class="border border-brand-border dark:border-slate-700 rounded-xl bg-brand-canvas dark:bg-[#0D1E36] overflow-hidden">
+            <button onclick="toggleFaq(this)" class="w-full px-6 py-4 text-left font-bold text-sm text-brand-dark dark:text-white flex justify-between items-center hover:text-brand-blue transition-colors">
+              <span data-i18n="faq_q1">Waarom zijn jullie tarieven hoger dan sommige andere aanbieders?</span>
+              <i class="fa-solid fa-chevron-down text-xs text-brand-blue transition-transform duration-300"></i>
+            </button>
+            <div class="faq-answer px-6 pb-5 text-xs text-slate-600 dark:text-slate-300 leading-relaxed">
+              <span data-i18n="faq_a1">
+                Kwaliteit zit in de uren die je níét direct ziet: minutieus schuren met HEPA-afzuiging, het repareren van microscopische haarscheurtjes, professionele fixeerlagen en het gebruik van onverdunde premium verven (Sikkens, Boss Paints). Bovendien werken wij uitsluitend met 12 vaste, goed opgeleide vakmannen en bieden wij 4 tot 6 jaar schriftelijke garantie. Hierdoor hoeft u na 2 jaar niet opnieuw te laten schilderen, wat u op termijn duizenden euro's bespaart.
+              </span>
+            </div>
+          </div>
+
+          <!-- FAQ 2 -->
+          <div class="border border-brand-border dark:border-slate-700 rounded-xl bg-brand-canvas dark:bg-[#0D1E36] overflow-hidden">
+            <button onclick="toggleFaq(this)" class="w-full px-6 py-4 text-left font-bold text-sm text-brand-dark dark:text-white flex justify-between items-center hover:text-brand-blue transition-colors">
+              <span data-i18n="faq_q2">Wat houdt de 4 tot 6 jaar schriftelijke garantie precies in?</span>
+              <i class="fa-solid fa-chevron-down text-xs text-brand-blue transition-transform duration-300"></i>
+            </button>
+            <div class="faq-answer px-6 pb-5 text-xs text-slate-600 dark:text-slate-300 leading-relaxed">
+              <span data-i18n="faq_a2">
+                Bij afronding van de werf ontvangt u een officieel garantiecertificaat ondertekend door zaakvoerder Jeroen Vandevenne. Deze dekt hechtingsproblemen, overmatige verkleuring door UV-straling en vroegtijdige afschilfering. Mocht er binnen deze periode onverhoopt iets misgaan, dan komen wij dit kosteloos en zonder discussie herstellen.
+              </span>
+            </div>
+          </div>
+
+          <!-- FAQ 3 -->
+          <div class="border border-brand-border dark:border-slate-700 rounded-xl bg-brand-canvas dark:bg-[#0D1E36] overflow-hidden">
+            <button onclick="toggleFaq(this)" class="w-full px-6 py-4 text-left font-bold text-sm text-brand-dark dark:text-white flex justify-between items-center hover:text-brand-blue transition-colors">
+              <span data-i18n="faq_q3">Hoeveel overlast en stof moeten we verwachten tijdens de werken?</span>
+              <i class="fa-solid fa-chevron-down text-xs text-brand-blue transition-transform duration-300"></i>
+            </button>
+            <div class="faq-answer px-6 pb-5 text-xs text-slate-600 dark:text-slate-300 leading-relaxed">
+              <span data-i18n="faq_a3">
+                Minimaal! Wij investeren zwaar in industriële Festool stofafzuiging met HEPA-filters die 99,9% van het schuurstof direct bij de bron opvangen. Daarnaast dekken we vloeren en meubels zorgvuldig af met professioneel ademend afdekvlies en laten we de werf aan het einde van elke werkdag bezemschoon achter.
+              </span>
+            </div>
+          </div>
+
+          <!-- FAQ 4 -->
+          <div class="border border-brand-border dark:border-slate-700 rounded-xl bg-brand-canvas dark:bg-[#0D1E36] overflow-hidden">
+            <button onclick="toggleFaq(this)" class="w-full px-6 py-4 text-left font-bold text-sm text-brand-dark dark:text-white flex justify-between items-center hover:text-brand-blue transition-colors">
+              <span data-i18n="faq_q4">Renoveren jullie ook studentenresidenties of koten in Leuven?</span>
+              <i class="fa-solid fa-chevron-down text-xs text-brand-blue transition-transform duration-300"></i>
+            </button>
+            <div class="faq-answer px-6 pb-5 text-xs text-slate-600 dark:text-slate-300 leading-relaxed">
+              <span data-i18n="faq_a4">
+                Absoluut! Wij zijn zeer actief in Leuven en gespecialiseerd in het snel, strak en slijtvast renoveren van studentenkamers, gemeenschappelijke keukens en residenties tijdens de zomermaanden of lesvrije periodes.
+              </span>
+            </div>
+          </div>
+
+        </div>
+
+      </div>
+    </section>
+
+    <!-- CONTACT & COMPANY PROFILE WITH ELEGANT GOOGLE MAPS -->
+    <section id="contact" class="py-24 bg-brand-canvas dark:bg-[#07111E] border-t border-brand-border dark:border-slate-800 transition-colors">
+      <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+        
+        <div class="grid grid-cols-1 lg:grid-cols-12 gap-12 items-start mb-16">
+          
+          <div class="lg:col-span-5">
+            <span class="text-xs font-bold uppercase tracking-widest text-brand-blue" data-i18n="contact_kicker">Persoonlijk Contact</span>
+            <h2 class="font-serif text-3xl sm:text-4xl font-bold text-brand-dark dark:text-white mt-2 mb-4" data-i18n="contact_title">
+              Bezoek onze werkplaats of plan een plaatsbezoek.
+            </h2>
+            <p class="text-slate-600 dark:text-slate-300 text-sm leading-relaxed mb-8" data-i18n="contact_desc">
+              Heeft u plannen voor uw woning, villa, studentenpand of bedrijfspand? Zaakvoerder Jeroen Vandevenne staat u graag persoonlijk te woord voor deskundig advies en een heldere offerte.
+            </p>
+
+            <div class="space-y-6 text-sm">
+              
+              <div class="flex items-start gap-4">
+                <div class="w-10 h-10 rounded-lg bg-brand-surface dark:bg-[#0D1E36] border border-brand-border dark:border-slate-700 flex items-center justify-center text-brand-blue shrink-0 shadow-sm">
+                  <i class="fa-solid fa-location-dot"></i>
+                </div>
+                <div>
+                  <h4 class="font-bold text-brand-dark dark:text-white" data-i18n="contact_addr_title">Hoofdvestiging & Atelier</h4>
+                  <p class="text-slate-600 dark:text-slate-300 text-xs mt-0.5">André Emondstraat 38, 3012 Wilsele (Leuven)</p>
+                  <p class="text-slate-400 text-[11px] mt-0.5">Regio Leuven & Vlaams-Brabant</p>
+                </div>
+              </div>
+
+              <div class="flex items-start gap-4">
+                <div class="w-10 h-10 rounded-lg bg-brand-surface dark:bg-[#0D1E36] border border-brand-border dark:border-slate-700 flex items-center justify-center text-brand-blue shrink-0 shadow-sm">
+                  <i class="fa-solid fa-phone"></i>
+                </div>
+                <div>
+                  <h4 class="font-bold text-brand-dark dark:text-white" data-i18n="contact_phone_title">Telefonisch Bereikbaar</h4>
+                  <a href="tel:+32498522314" class="text-brand-blue hover:underline font-bold text-xs block mt-0.5">0498 52 23 14</a>
+                  <p class="text-slate-500 dark:text-slate-400 text-[11px] mt-0.5" data-i18n="contact_hours">Maandag t/m Vrijdag: 07:30 – 18:30</p>
+                </div>
+              </div>
+
+              <div class="flex items-start gap-4">
+                <div class="w-10 h-10 rounded-lg bg-brand-surface dark:bg-[#0D1E36] border border-brand-border dark:border-slate-700 flex items-center justify-center text-brand-blue shrink-0 shadow-sm">
+                  <i class="fa-solid fa-envelope"></i>
+                </div>
+                <div>
+                  <h4 class="font-bold text-brand-dark dark:text-white">E-mail</h4>
+                  <a href="mailto:ast.jeroen@hotmail.com" class="text-brand-blue hover:underline text-xs block mt-0.5 font-medium">ast.jeroen@hotmail.com</a>
+                  <p class="text-slate-400 text-[11px] mt-0.5" data-i18n="contact_reply">Antwoord binnen 24 werkuren</p>
+                </div>
+              </div>
+
+              <div class="flex items-start gap-4">
+                <div class="w-10 h-10 rounded-lg bg-brand-surface dark:bg-[#0D1E36] border border-brand-border dark:border-slate-700 flex items-center justify-center text-brand-blue shrink-0 shadow-sm">
+                  <i class="fa-solid fa-id-card"></i>
+                </div>
+                <div>
+                  <h4 class="font-bold text-brand-dark dark:text-white">Bedrijfsgegevens</h4>
+                  <p class="text-slate-600 dark:text-slate-300 text-xs mt-0.5">Ondernemingsnummer: BE 0444.034.326</p>
+                  <p class="text-slate-400 text-[11px] mt-0.5">Algemene Schilderwerken Terbank (A.S.T.)</p>
+                </div>
+              </div>
+
+            </div>
+          </div>
+
+          <!-- Direct Fast Contact Card -->
+          <div class="lg:col-span-7 bg-brand-surface dark:bg-[#0D1E36] p-8 sm:p-10 rounded-3xl border border-brand-border dark:border-slate-700 shadow-luxury transition-colors">
+            <h3 class="font-serif text-2xl font-bold text-brand-dark dark:text-white mb-2" data-i18n="quick_contact_title">Direct een vraag stellen?</h3>
+            <p class="text-xs text-slate-500 dark:text-slate-400 mb-6" data-i18n="quick_contact_desc">Stuur ons een kort bericht, wij bellen u dezelfde dag nog terug.</p>
+            
+            <form onsubmit="handleQuickContact(event)" class="space-y-4">
+              <div class="grid grid-cols-1 sm:grid-cols-2 gap-4">
+                <div>
+                  <label class="block text-xs font-semibold text-slate-700 dark:text-slate-300 mb-1" data-i18n="f_label_name">Uw Naam</label>
+                  <input type="text" required placeholder="Naam" class="w-full px-4 py-2.5 rounded-lg border border-brand-border dark:border-slate-700 bg-brand-canvas dark:bg-[#07111E] text-slate-900 dark:text-white text-sm focus:outline-none focus:border-brand-blue">
+                </div>
+                <div>
+                  <label class="block text-xs font-semibold text-slate-700 dark:text-slate-300 mb-1" data-i18n="f_label_phone">Telefoonnummer</label>
+                  <input type="tel" required placeholder="04xx xx xx xx" class="w-full px-4 py-2.5 rounded-lg border border-brand-border dark:border-slate-700 bg-brand-canvas dark:bg-[#07111E] text-slate-900 dark:text-white text-sm focus:outline-none focus:border-brand-blue">
+                </div>
+              </div>
+
+              <div>
+                <label class="block text-xs font-semibold text-slate-700 dark:text-slate-300 mb-1" data-i18n="quick_label_msg">Uw vraag of projectbeschrijving</label>
+                <textarea rows="4" required placeholder="Waarmee kunnen we u helpen?" class="w-full px-4 py-2.5 rounded-lg border border-brand-border dark:border-slate-700 bg-brand-canvas dark:bg-[#07111E] text-slate-900 dark:text-white text-sm focus:outline-none focus:border-brand-blue"></textarea>
+              </div>
+
+              <div class="flex items-center justify-between pt-2">
+                <span class="text-[11px] text-slate-500 dark:text-slate-400 flex items-center gap-1.5">
+                  <i class="fa-solid fa-clock-rotate-left text-brand-blue"></i>
+                  <span data-i18n="quick_fast_reply">Reactie binnen 24 uur</span>
+                </span>
+                <button type="submit" class="px-7 py-3 rounded-lg bg-brand-blue hover:bg-brand-blue-hover text-white text-xs font-bold uppercase tracking-wider transition-colors shadow">
+                  <span data-i18n="quick_btn">Verstuur Bericht</span>
+                </button>
+              </div>
+            </form>
+          </div>
+
+        </div>
+
+        <!-- ELEGANT GOOGLE MAPS SHOWCASE WITH ROUTE PLANNER -->
+        <div class="bg-brand-surface dark:bg-[#0D1E36] rounded-3xl border border-brand-border dark:border-slate-700 p-4 sm:p-6 shadow-luxury overflow-hidden transition-colors">
+          <div class="flex flex-col md:flex-row justify-between items-start md:items-center gap-4 mb-4 px-2">
+            <div>
+              <span class="text-xs font-bold uppercase tracking-widest text-brand-blue" data-i18n="map_kicker">Locatie & Bereikbaarheid</span>
+              <h3 class="font-serif text-xl font-bold text-brand-dark dark:text-white" data-i18n="map_title">
+                Centraal gelegen in Wilsele (Leuven), actief in heel Vlaams-Brabant & Brussel.
+              </h3>
+            </div>
+            <a href="https://maps.app.goo.gl/d48TU3Ji4gocQNTD8" target="_blank" rel="noopener noreferrer" class="inline-flex items-center gap-2 px-5 py-2.5 rounded-xl bg-slate-900 dark:bg-brand-blue text-white text-xs font-bold uppercase tracking-wider hover:bg-brand-blue transition-colors shadow">
+              <i class="fa-solid fa-diamond-turn-right text-sm"></i>
+              <span data-i18n="map_btn">Plan Route via Google Maps</span>
+            </a>
+          </div>
+
+          <div class="relative w-full h-[360px] sm:h-[440px] rounded-2xl overflow-hidden border border-slate-200 dark:border-slate-700 shadow-inner">
+            <iframe 
+              title="A.S.T. Schilderwerken op Google Maps"
+              src="https://maps.google.com/maps?q=Andr%C3%A9%20Emondstraat%2038,%203012%20Wilsele,%20Belgium&t=&z=15&ie=UTF8&iwloc=&output=embed" 
+              class="w-full h-full border-0 filter contrast-105"
+              loading="lazy"
+              referrerpolicy="no-referrer-when-downgrade">
+            </iframe>
+            
+            <!-- Floating Address Badge on top of map -->
+            <div class="absolute bottom-4 left-4 z-10 bg-white/95 dark:bg-slate-900/95 backdrop-blur-md px-4 py-3 rounded-xl border border-slate-200 dark:border-slate-700 shadow-lg flex items-center gap-3">
+              <div class="w-9 h-9 rounded-lg bg-brand-blue/15 text-brand-blue flex items-center justify-center shrink-0">
+                <i class="fa-solid fa-location-dot"></i>
+              </div>
+              <div>
+                <p class="font-bold text-xs text-brand-dark dark:text-white">A.S.T. Wilsele (Leuven)</p>
+                <p class="text-[11px] text-slate-500 dark:text-slate-400">André Emondstraat 38, 3012 Wilsele</p>
+              </div>
+            </div>
+          </div>
+        </div>
+
+      </div>
+    </section>
+  </main>
+
+  <!-- LUXURY FOOTER with Authentic AST Logo -->
+  <footer class="bg-brand-dark dark:bg-[#040A12] text-slate-400 text-xs py-16 border-t border-slate-800 transition-colors">
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+      
+      <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-5 gap-10 pb-12 border-b border-slate-800">
+        
+        <!-- Brand Info -->
+        <div class="lg:col-span-2 space-y-4">
+          <div class="flex items-center gap-3">
+            <img src="logo.png" alt="A.S.T. Logo" class="h-10 w-auto filter brightness-110 drop-shadow">
+            <div>
+              <span class="font-serif text-lg font-bold text-white tracking-wide">A.S.T. Schilderwerken</span>
+              <span class="block text-[11px] text-brand-blue font-semibold">Algemene Schilderwerken Terbank • Sinds 1989</span>
+            </div>
+          </div>
+          <p class="text-slate-400 text-xs leading-relaxed max-w-sm" data-i18n="footer_bio">
+            Erkend specialist in binnenschilderwerk, gevelbehandeling, lakspuitwerk, waterdichting en renovaties van woningen en studentenresidenties. Met 12 vaste vakmensen en een schriftelijke garantie van 4 tot 6 jaar.
+          </p>
+          <div class="flex items-center gap-3 text-slate-300">
+            <span class="text-brand-blue text-sm"><i class="fa-solid fa-shield-halved"></i></span>
+            <span class="text-[11px] font-semibold text-slate-200">Geregistreerd aannemer • André Emondstraat 38, Wilsele (Leuven)</span>
+          </div>
+        </div>
+
+        <!-- Links 1: Diensten -->
+        <div>
+          <h4 class="text-white font-bold text-xs uppercase tracking-wider mb-4" data-i18n="footer_services">Diensten</h4>
+          <ul class="space-y-2 text-slate-400">
+            <li><a href="#diensten" class="hover:text-brand-blue transition-colors" data-i18n="s1_tag">Binnenschilderwerk</a></li>
+            <li><a href="#diensten" class="hover:text-brand-blue transition-colors" data-i18n="s2_tag">Buitenschilderwerk & Gevels</a></li>
+            <li><a href="#diensten" class="hover:text-brand-blue transition-colors" data-i18n="s4_tag">Ramen & Deuren lakken</a></li>
+            <li><a href="#diensten" class="hover:text-brand-blue transition-colors" data-i18n="s5_tag">Gyproc & Mortex</a></li>
+            <li><a href="#diensten" class="hover:text-brand-blue transition-colors" data-i18n="s7_tag">Vochtbestrijding & Kelders</a></li>
+            <li><a href="#diensten" class="hover:text-brand-blue transition-colors" data-i18n="s9_tag">Schadedossiers Verzekering</a></li>
+          </ul>
+        </div>
+
+        <!-- Links 2: Zekerheden -->
+        <div>
+          <h4 class="text-white font-bold text-xs uppercase tracking-wider mb-4" data-i18n="footer_guarantees">Garantie & Regio</h4>
+          <ul class="space-y-2 text-slate-400">
+            <li><a href="#garantie" class="hover:text-brand-blue transition-colors">4-6 Jaar Garantiebewijs</a></li>
+            <li><a href="#waarom" class="hover:text-brand-blue transition-colors">Festool Stofvrij Schuren</a></li>
+            <li><span class="text-slate-500">Regio Leuven & Kessel-Lo</span></li>
+            <li><span class="text-slate-500">Regio Tervuren & Overijse</span></li>
+            <li><span class="text-slate-500">Studentenkamers & Koten</span></li>
+            <li><span class="text-slate-500">Brussel & Vlaams-Brabant</span></li>
+          </ul>
+        </div>
+
+        <!-- Links 3: Direct Contact -->
+        <div>
+          <h4 class="text-white font-bold text-xs uppercase tracking-wider mb-4" data-i18n="nav_contact">Contact</h4>
+          <div class="space-y-2 text-slate-400">
+            <p>André Emondstraat 38</p>
+            <p>3012 Wilsele (Leuven)</p>
+            <p class="pt-2 text-brand-blue font-bold text-sm">0498 52 23 14</p>
+            <p>ast.jeroen@hotmail.com</p>
+          </div>
+        </div>
+
+      </div>
+
+      <div class="pt-8 flex flex-col sm:flex-row items-center justify-between text-[11px] text-slate-500 gap-4">
+        <p>© 2026 A.S.T. Algemene Schilderwerken Terbank. Alle rechten voorbehouden.</p>
+        <p>Vakkennis sinds 1989 • Redesign voor A.S.T. Schilderwerken</p>
+      </div>
+
+    </div>
+  </footer>
+
+  <!-- JAVASCRIPT: THEME TOGGLE, TRANSLATIONS, BEFORE/AFTER SLIDER, FUNNEL -->
+  <script>
+    /* =========================================================================
+       1. DARK / LIGHT THEME TOGGLE
+       ========================================================================= */
+    function toggleTheme() {
+      const isDark = document.documentElement.classList.toggle('dark');
+      try {
+        localStorage.setItem('ast_theme', isDark ? 'dark' : 'light');
+      } catch (e) {}
+      updateThemeIcon(isDark);
+    }
+
+    function updateThemeIcon(isDark) {
+      const icon = document.getElementById('theme-toggle-icon');
+      if (icon) {
+        if (isDark) {
+          icon.className = 'fa-solid fa-sun text-amber-400 text-sm';
+        } else {
+          icon.className = 'fa-solid fa-moon text-slate-700 text-sm';
+        }
+      }
+    }
+
+    // Initialize Theme immediately to prevent flash
+    (function initTheme() {
+      let savedTheme = 'light';
+      try {
+        savedTheme = localStorage.getItem('ast_theme') || (window.matchMedia && window.matchMedia('(prefers-color-scheme: dark)').matches ? 'dark' : 'light');
+      } catch(e) {}
+      if (savedTheme === 'dark') {
+        document.documentElement.classList.add('dark');
+      } else {
+        document.documentElement.classList.remove('dark');
+      }
+    })();
+
+    /* =========================================================================
+       2. TRI-LINGUAL ARCHITECTURE (NL / FR / EN)
+       ========================================================================= */
+    const translations = {
+      nl: {
+        top_bar_craft: "35+ Jaar Ervaring (Sinds 1989)",
+        top_bar_warranty: "4 tot 6 jaar schriftelijke garantie",
+        top_bar_onsite: "Zaakvoerder Jeroen Vandevenne op de werf",
+        logo_subtitle: "Schilder-, Renovatie- & Waterdichting",
+        nav_why: "Waarom A.S.T.",
+        nav_services: "Diensten",
+        nav_warranty: "4–6 Jaar Garantie",
+        nav_projects: "Realisaties",
+        nav_reviews: "Ervaringen",
+        nav_contact: "Contact",
+        nav_cta: "Vrijblijvende Offerte",
+
+        hero_pill_years: "35+ JAAR ERVARING",
+        hero_pill_region: "Wilsele, Leuven & Vlaams-Brabant",
+        hero_title_p1: "Duurzaam schilder- en renovatiewerk met",
+        hero_title_highlight: "4 tot 6 jaar schriftelijke garantie.",
+        hero_subtitle: "Waar budget-schilders oppervlakkig haastwerk leveren, waarborgen onze 12 gecertificeerde vakmannen een compromisloze voorbereiding, professionele verfsystemen en decennialange bescherming van uw eigendom.",
+        hero_btn_quote: "Offerte & Advies Aanvragen",
+        hero_btn_portfolio: "Bekijk Onze Realisaties",
+
+        badge1_title: "4–6 Jaar Garantie",
+        badge1_desc: "Zwart-op-wit contractueel",
+        badge2_title: "12 Vaste Meesters",
+        badge2_desc: "Geen wisselende onderaannemers",
+        badge3_title: "Score 4.9 / 5.0",
+        badge3_desc: "140+ tevreden eigenaars",
+
+        partner_sikkens: "Sikkens Certified Master Painter",
+        partner_boss: "Boss Paints Premium Partner",
+        partner_confederatie: "Erkend Bouwunie & Embuild",
+        partner_festool: "Stofarm Schuren (Festool HEPA)",
+
+        why_kicker: "Eerlijk Meesterschap",
+        why_title: "Waarom goedkoop schilderwerk na twee seizoenen duurkoop blijkt.",
+        why_intro: "Een voordelige offerte lijkt aantrekkelijk, tot er na 18 maanden barsten, afbladdering of vochtblaasjes ontstaan. A.S.T. investeert waar anderen bezuinigen: in de voorbereiding, de verflagen en het contractueel garanderen van het resultaat.",
+
+        why_c1_tag: "01. Voorbereiding & Verfsystemen",
+        why_c1_title: "70% van ons werk ziet u pas na 5 jaar",
+        why_c1_desc: "Budgetbedrijven schilderen over stof en scheuren heen met aangelengde verf. Wij besteden het leeuwendeel van de tijd aan dieptereiniging, vochtmeting, vliesversterking en microporeuze grondlagen met topmerken zoals Sikkens en Boss Paints.",
+        why_c1_foot: "Geen afbladdering of vergeling",
+
+        why_c2_tag: "02. De A.S.T. Zekerheid",
+        why_c2_title: "4 tot 6 jaar schriftelijke garantie",
+        why_c2_desc: "In tegenstelling tot vage mondelinge toezeggingen ontvangt u bij oplevering een officieel garantiecertificaat. Zaakvoerder Jeroen Vandevenne volgt elke werf persoonlijk op. Mocht er ooit een onvolkomenheid optreden, dan lossen wij dit kosteloos op.",
+        why_c2_foot: "Officieel A.S.T. Garantiecertificaat",
+
+        why_c3_tag: "03. Alles Onder Één Dak",
+        why_c3_title: "Geen vingerwijzen tussen stielmannen",
+        why_c3_desc: "Heeft uw woning ook Gyproc-afwerking, spuitlakwerk voor deuren of kelderwaterdichting nodig? Onze 12 vaste vakmannen beheersen het hele traject. Eén planning, één factuur en één eindverantwoordelijke.",
+        why_c3_foot: "Vaste planning & stipte oplevering",
+
+        table_col_feature: "Kwaliteitscriterium",
+        table_col_cheap: "Standaard Budget-Schilder",
+        table_col_ast: "A.S.T. Meesterschap",
+        t_row1_title: "Garantietermijn",
+        t_row1_bad: "Wettelijk minimum / Vaak géén",
+        t_row1_good: "4 tot 6 Jaar Schriftelijk",
+        t_row2_title: "Voorbereiding & Schuren",
+        t_row2_bad: "Snel handmatig (veel stof)",
+        t_row2_good: "Machinaal 99.9% stofvrij (Festool)",
+        t_row3_title: "Verfkwaliteit",
+        t_row3_bad: "Discount / Doe-het-zelf verdund",
+        t_row3_good: "100% Professioneel Sikkens & Boss",
+        t_row4_title: "Personeel op de werf",
+        t_row4_bad: "Wisselende onderaannemers",
+        t_row4_good: "12 Vaste Belgische stielmannen",
+
+        services_kicker: "Vakdisciplines van A.S.T.",
+        services_title: "Uitzonderlijke afwerking voor binnen, buiten, renovaties en waterdichting.",
+        services_link: "Bespreking op locatie aanvragen",
+        s1_tag: "Binnen",
+        s1_title: "Schilderwerken Binnen & Vliesbehang",
+        s1_desc: "Naadloos strak schilderwerk met kalkverftechnieken, microporeuze primers en renovatievlies. Onze Festool afzuigunits garanderen een leefbare, schone woning tijdens de werken.",
+        s1_f1: "99.9% Stofarm schuren",
+        s1_f2: "Plamuren en scheurreparatie",
+        s1_f3: "Afwasbare kwaliteitsmuurverf",
+
+        s2_tag: "Buiten",
+        s2_title: "Schilderwerken Buiten & Gevelbescherming",
+        s2_desc: "Bescherming tegen slagregen, UV en vorst met ademende silicaatverven en kaleien. Uw gevel blijft jarenlang mos- en scheurvrij met schriftelijke garantie.",
+        s2_f1: "Dampopen gevelsystemen",
+        s2_f2: "Houtwerk & kroonlijsten bescherming",
+        s2_f3: "Professionele stellingbouw inbegrepen",
+
+        s3_tag: "Gevels",
+        s3_title: "Gevelreiniging, Kalei & Renovatie",
+        s3_desc: "Grondige reiniging van verweerd metselwerk, barstherstel en traditionele kaleiwerken. Geeft uw woning een tijdloze, authentieke uitstraling met optimale bescherming.",
+        s3_f1: "Zachte stoom- & zandreiniging",
+        s3_f2: "Ademende minerale kalei",
+        s3_f3: "Herstel van voegwerk & dorpels",
+
+        s4_tag: "Schrijnwerk",
+        s4_title: "Onderhoud Houten Ramen & Deuren",
+        s4_desc: "Preventief en curatief lak- en schilderwerk voor buitenschrijnwerk, garagepoorten en binnendeuren. Wij herstellen houtrot en voorzien elastische, UV-vaste laklagen.",
+        s4_f1: "Houtrotinspectie en epoxyreparaties",
+        s4_f2: "Spiegelglad machinaal lakwerk",
+        s4_f3: "Weerbestendige microporeuze lak",
+
+        s5_tag: "Renovatie",
+        s5_title: "Gyprocwerken, Tussenwanden & Mortex",
+        s5_desc: "Herinrichting van woonruimtes, studentenkoten en kantoren met akoestische scheidingswanden, verlaagde plafonds en naadloze Mortex pleistertechnieken voor vloeren en wanden.",
+        s5_f1: "Geluidsisolerende wanden (studs)",
+        s5_f2: "Schilderklaar uitplamuren (Q3/Q4)",
+        s5_f3: "Mortex betonstuc voor badkamer & vloer",
+
+        s6_tag: "Totaalconcept",
+        s6_title: "Badkamerrenovaties & Interieurmake-overs",
+        s6_desc: "Van ruwbouw-optimalisatie tot complete afwerking van moderne badkamers, vloeren en sanitair. Eén team, één planning en één verantwoordelijke zaakvoerder.",
+        s6_f1: "Volledig waterdichte inloopdouches",
+        s6_f2: "Vloerbekleding & keramische tegels",
+        s6_f3: "Afbraak, sanitair en schilderwerk in 1 flow",
+
+        s7_tag: "Waterdichting",
+        s7_title: "Vochtbestrijding & Gevelhydrofuge",
+        s7_desc: "Definitieve behandeling van opstijgend vocht en geveldoorslag via professionele gel-injecties en kleurloze ademende hydrofuge coatings.",
+        s7_f1: "Muurinjecties met certificaat",
+        s7_f2: "Kelderbekuiping & waterdichte mortels",
+        s7_f3: "Gevelimpregnering tegen vorstschade",
+
+        s8_tag: "Daken & Goten",
+        s8_title: "Onderhoud Daken, Ontmossen & Dakgoten",
+        s8_desc: "Reiniging en beschermende coating voor dakpannen en leien, herstellen of vernieuwen van zinken dakgoten en afvoeren om lekkages voor te zijn.",
+        s8_f1: "Mos- en algenverwijdering met nabehandeling",
+        s8_f2: "Herstelling en soldeerwerk dakgoten",
+        s8_f3: "Voorkomt waterschade in de gevel",
+
+        s9_tag: "Expertises",
+        s9_title: "Waterschade & Verzekeringsdossiers",
+        s9_desc: "Heeft u waterschade opgelopen door een lekkage of overstroming? A.S.T. stelt gedetailleerde bestekken op voor uw verzekeringsexpert en voert het complete herstel uit.",
+        s9_f1: "Officieel bestek conform verzekeringsnormen",
+        s9_f2: "Snelle noodinterventie & droging",
+        s9_f3: "Vollédige herstelwerken onder één dak",
+        s_btn: "Offerte aanvragen voor deze discipline",
+
+        ba_kicker: "Meesterschap in Beeld",
+        ba_title: "De A.S.T. Transformatie: Bekijk het verschil.",
+        ba_intro: "Sleep de schuifregelaar van links naar rechts om het resultaat van onze diepgaande voorbereiding en hoogwaardige lakafwerking te zien.",
+        ba_p1: "Herenwoning Leuven",
+        ba_p2: "Villa Gevelrenovatie",
+        ba_p3: "Design Lakspuitwerk",
+        ba_before_label: "VOOR: VERWEERD",
+        ba_after_label: "NA: A.S.T. AFWERKING",
+        ba_drag_hint: "↔ Versleep de slider om te vergelijken",
+
+        warranty_badge: "Ongeëvenaard in Vlaanderen",
+        warranty_title: "Onze 4 tot 6 Jaar Schriftelijke Garantie. Geen kleine lettertjes.",
+        warranty_p1: "Veel schilders beloven mondeling dat \"alles goed komt\", maar verdwijnen wanneer na één winter de eerste verflagen loslaten. Bij A.S.T. ontvangt u bij oplevering een officieel getekend <strong class=\"text-white\">Garantiecertificaat</strong> op naam van uw woning.",
+        w_item1_title: "Hechtingsgarantie",
+        w_item1_desc: "Geen bladdervorming of afschilfering",
+        w_item2_title: "UV- & Kleurvastheid",
+        w_item2_desc: "Behoud van glansgraad en diepe pigmentatie",
+        w_item3_title: "Vocht- & Schimmelwering",
+        w_item3_desc: "Permanente microporeuze ademing van muren",
+        w_item4_title: "Directe Werfopvolging",
+        w_item4_desc: "Inspectie door dhr. Vandevenne persoonlijk",
+        warranty_quote: "\"Wij hanteren hogere standaarden dan gebruikelijk in onze branche. Daarom durven wij u deze garantie schriftelijk toe te vertrouwen.\" — Jeroen Vandevenne, Zaakvoerder",
+
+        funnel_kicker: "Eenvoudig & Vrijblijvend",
+        funnel_title: "Bereken uw project & vraag gratis advies aan.",
+        funnel_subtitle: "In 3 overzichtelijke stappen naar een gedetailleerd richtbestek. Geen verplichtingen, inclusief gratis inspectie op locatie door de zaakvoerder.",
+        funnel_step1_label: "Stap 1",
+        funnel_step1_name: "Type Werken",
+        funnel_step2_label: "Stap 2",
+        funnel_step2_name: "Pand & Timing",
+        funnel_step3_label: "Stap 3",
+        funnel_step3_name: "Contact & Afspraak",
+
+        f_s1_heading: "Welke werken wilt u laten uitvoeren?",
+        f_s1_instruction: "Selecteer één of meerdere disciplines voor uw project:",
+        f_opt_interior: "Binnenschilderwerk",
+        f_opt_interior_desc: "Muren, plafonds, houtwerk, plamuurwerk",
+        f_opt_exterior: "Buitenschilderwerk",
+        f_opt_exterior_desc: "Gevels, ramen, deuren, kaleiwerken",
+        f_opt_windows: "Ramen & Deuren",
+        f_opt_windows_desc: "Herstel, schuren, lakspuitwerk & UV-lak",
+        f_opt_moisture: "Waterdichting & Vocht",
+        f_opt_moisture_desc: "Kelderdichting, opstijgend vocht, hydrofuge",
+        f_opt_gyproc: "Gyproc & Tussenwanden",
+        f_opt_gyproc_desc: "Plafonds, scheidingswanden & isolatie",
+        f_opt_reno: "Totaalrenovatie",
+        f_opt_reno_desc: "Badkamers, Mortex, vloeren & interieur",
+        f_opt_roof: "Daken & Dakgoten",
+        f_opt_roof_desc: "Ontmossen, reinigen & zinkherstellingen",
+        f_opt_insurance: "Waterschadedossier",
+        f_opt_insurance_desc: "Expertise & bestek voor verzekering",
+        f_opt_spray: "Lakspuitwerk (Atelier)",
+        f_opt_spray_desc: "Keukens, radiatoren, trappen, deuren",
+        f_btn_next: "Volgende Stap: Pand & Timing",
+
+        f_s2_heading: "Over welk type eigendom gaat het?",
+        f_s2_instruction: "Dit helpt ons om de juiste werfmethode, stellingen en planning in te schatten:",
+        f_prop_student: "Studentenkot / Residentie",
+        f_prop_house: "Woning / Villa",
+        f_prop_app: "Appartement",
+        f_prop_mansion: "Herenhuis",
+        f_prop_comm: "Bedrijf / Kantoor",
+        f_prop_vme: "VME / Traphal",
+        f_timing_title: "Gewenste uitvoeringstermijn:",
+        f_time_asap: "Zo snel mogelijk (Dringend)",
+        f_time_months: "Binnen 1 tot 3 maanden",
+        f_time_later: "Oriënterend / Later dit jaar",
+        f_btn_prev: "Vorige",
+        f_btn_next2: "Laatste Stap: Contactgegevens",
+
+        f_s3_heading: "Waar mogen we het richtbestek naartoe sturen?",
+        f_s3_instruction: "Zaakvoerder Jeroen Vandevenne neemt binnen 24 uur contact met u op voor een vrijblijvend advies of plaatsbezoek.",
+        f_label_name: "Naam & Voornaam *",
+        f_ph_name: "bijv. Sophie De Smet",
+        f_label_phone: "Telefoonnummer *",
+        f_ph_phone: "bijv. 0498 52 23 14",
+        f_label_email: "E-mailadres *",
+        f_ph_email: "bijv. sophie@voorbeeld.be",
+        f_label_city: "Gemeente / Postcode *",
+        f_ph_city: "bijv. 3000 Leuven",
+        f_label_notes: "Extra toelichting of afmetingen (optioneel)",
+        f_ph_notes: "Beschrijf eventuele bijzonderheden, oppervlakte of specifieke wensen...",
+        f_privacy: "Uw gegevens worden 100% vertrouwelijk behandeld en nooit gedeeld met derden.",
+        f_btn_submit: "Aanvraag Verzenden",
+
+        modal_success_title: "Hartelijk dank voor uw aanvraag!",
+        modal_success_desc: "Wij hebben uw projectgegevens succesvol ontvangen. Zaakvoerder Jeroen Vandevenne analyseert uw aanvraag en neemt binnen 24 uur telefonisch contact op voor een vrijblijvende afspraak.",
+        modal_ref: "Referentienummer:",
+        modal_gar: "Garantiebescherming:",
+        modal_contact_person: "Behandeld door:",
+        modal_btn_close: "Sluiten & Terug naar Website",
+
+        rev_kicker: "Ervaringen van Eigenaars",
+        rev_title: "Wat onze klanten in Leuven en omgeving vertellen.",
+        rev1_text: "\"Onze woning ziet er na de doortocht van A.S.T. een pak frisser uit! Er is prachtig schilderwerk geleverd door Robin en de rest van de vaste schilders. Alles piekfijn afgewerkt en geen spatje verf gemorst.\"",
+        rev1_loc: "Leuven • Binnen- en buitenschilderwerken",
+        rev2_text: "\"Onze gevel had jarenlang last van vocht en afbladderende verf door een eerdere 'goedkope' schilder. A.S.T. heeft eerst een grondige vochtmeting gedaan en een ademend silicaatsysteem geplaatst met 6 jaar schriftelijke garantie. Eindelijk vakmensen die weten wat ze doen.\"",
+        rev2_loc: "Tervuren • Gevelrenovatie & Hydrofuge",
+        rev3_text: "\"De binnendeuren en onze keukenkasten zijn met de spuitcabine gedaan: zó glad en strak hadden we het zelf nooit verwacht. De werf werd iedere avond netjes gestofzuigd achtergelaten. Pure stielmannen!\"",
+        rev3_loc: "Kessel-Lo • Lakspuitwerk & Totaalafwerking",
+
+        faq_kicker: "Duidelijkheid Vooraf",
+        faq_title: "Veelgestelde vragen over onze werkwijze en garantie.",
+        faq_q1: "Waarom zijn jullie tarieven hoger dan sommige andere aanbieders?",
+        faq_a1: "Kwaliteit zit in de uren die je níét direct ziet: minutieus schuren met HEPA-afzuiging, het repareren van microscopische haarscheurtjes, professionele fixeerlagen en het gebruik van onverdunde premium verven (Sikkens, Boss Paints). Bovendien werken wij uitsluitend met 12 vaste, goed opgeleide vakmannen en bieden wij 4 tot 6 jaar schriftelijke garantie. Hierdoor hoeft u na 2 jaar niet opnieuw te laten schilderen, wat u op termijn duizenden euro's bespaart.",
+        faq_q2: "Wat houdt de 4 tot 6 jaar schriftelijke garantie precies in?",
+        faq_a2: "Bij afronding van de werf ontvangt u een officieel garantiecertificaat ondertekend door zaakvoerder Jeroen Vandevenne. Deze dekt hechtingsproblemen, overmatige verkleuring door UV-straling en vroegtijdige afschilfering. Mocht er binnen deze periode onverhoopt iets misgaan, dan komen wij dit kosteloos en zonder discussie herstellen.",
+        faq_q3: "Hoeveel overlast en stof moeten we verwachten tijdens de werken?",
+        faq_a3: "Minimaal! Wij investeren zwaar in industriële Festool stofafzuiging met HEPA-filters die 99,9% van het schuurstof direct bij de bron opvangen. Daarnaast dekken we vloeren en meubels zorgvuldig af met professioneel ademend afdekvlies en laten we de werf aan het einde van elke werkdag bezemschoon achter.",
+        faq_q4: "Renoveren jullie ook studentenresidenties of koten in Leuven?",
+        faq_a4: "Absoluut! Wij zijn zeer actief in Leuven en gespecialiseerd in het snel, strak en slijtvast renoveren van studentenkamers, gemeenschappelijke keukens en residenties tijdens de zomermaanden of lesvrije periodes.",
+
+        contact_kicker: "Persoonlijk Contact",
+        contact_title: "Bezoek onze werkplaats of plan een plaatsbezoek.",
+        contact_desc: "Heeft u plannen voor uw woning, villa, studentenpand of bedrijfspand? Zaakvoerder Jeroen Vandevenne staat u graag persoonlijk te woord voor deskundig advies en een heldere offerte.",
+        contact_addr_title: "Hoofdvestiging & Atelier",
+        contact_phone_title: "Telefonisch Bereikbaar",
+        contact_hours: "Maandag t/m Vrijdag: 07:30 – 18:30",
+        contact_reply: "Antwoord binnen 24 werkuren",
+        quick_contact_title: "Direct een vraag stellen?",
+        quick_contact_desc: "Stuur ons een kort bericht, wij bellen u dezelfde dag nog terug.",
+        quick_label_msg: "Uw vraag of projectbeschrijving",
+        quick_fast_reply: "Reactie binnen 24 uur",
+        quick_btn: "Verstuur Bericht",
+        map_kicker: "Locatie & Bereikbaarheid",
+        map_title: "Centraal gelegen in Wilsele (Leuven), actief in heel Vlaams-Brabant & Brussel.",
+        map_btn: "Plan Route via Google Maps",
+        footer_bio: "Erkend specialist in binnenschilderwerk, gevelbehandeling, lakspuitwerk, waterdichting en renovaties van woningen en studentenresidenties. Met 12 vaste vakmensen en een schriftelijke garantie van 4 tot 6 jaar.",
+        footer_services: "Diensten",
+        footer_guarantees: "Garantie & Regio"
+      },
+      fr: {
+        top_bar_craft: "35+ Ans d'Expérience (Depuis 1989)",
+        top_bar_warranty: "4 à 6 ans de garantie écrite",
+        top_bar_onsite: "Le gérant Jeroen Vandevenne présent sur chantier",
+        logo_subtitle: "Peinture, Rénovation & Étanchéité",
+        nav_why: "Pourquoi A.S.T.",
+        nav_services: "Services",
+        nav_warranty: "4–6 Ans de Garantie",
+        nav_projects: "Réalisations",
+        nav_reviews: "Témoignages",
+        nav_contact: "Contact",
+        nav_cta: "Devis Sans Engagement",
+
+        hero_pill_years: "35+ ANS D'EXPÉRIENCE",
+        hero_pill_region: "Wilsele, Louvain & Brabant flamand",
+        hero_title_p1: "Travaux de peinture et rénovation haut de gamme avec",
+        hero_title_highlight: "4 à 6 ans de garantie écrite.",
+        hero_subtitle: "Là où les peintres à bas coût bâclent la préparation, nos 12 maîtres-artisans certifiés garantissent une préparation méticuleuse, des peintures professionnelles et une durabilité absolue.",
+        hero_btn_quote: "Demander Devis & Conseil",
+        hero_btn_portfolio: "Découvrir nos Réalisations",
+
+        badge1_title: "4–6 Ans de Garantie",
+        badge1_desc: "Engagement contractuel écrit",
+        badge2_title: "12 Artisans Fixes",
+        badge2_desc: "Aucune sous-traitance aléatoire",
+        badge3_title: "Note 4.9 / 5.0",
+        badge3_desc: "Plus de 140 propriétaires satisfaits",
+
+        partner_sikkens: "Maître Peintre Certifié Sikkens",
+        partner_boss: "Partenaire Premium Boss Paints",
+        partner_confederatie: "Agréé Bouwunie & Embuild",
+        partner_festool: "Ponçage sans poussière (Festool HEPA)",
+
+        why_kicker: "Excellence Artisanale",
+        why_title: "Pourquoi une peinture bon marché s'avère toujours trop chère après deux saisons.",
+        why_intro: "Un devis bradé semble tentant, jusqu'à ce que craquelures, cloques et moisissures apparaissent après 18 mois. A.S.T. investit là où les autres rognent : dans la préparation des fonds et des garanties formelles.",
+
+        why_c1_tag: "01. Préparation & Systèmes de Peinture",
+        why_c1_title: "70% de notre travail se remarque après 5 ans",
+        why_c1_desc: "Les peintres discounts peignent sur la poussière avec des peintures diluées. Nous consacrons la majeure partie du temps au décapage, contrôle d'humidité, voile de renfort et primaires microporeux Sikkens et Boss Paints.",
+        why_c1_foot: "Ni écaillage ni jaunissement",
+
+        why_c2_tag: "02. La Sérénité A.S.T.",
+        why_c2_title: "4 à 6 ans de garantie écrite",
+        why_c2_desc: "À la réception du chantier, vous recevez un certificat officiel de garantie. Le gérant Jeroen Vandevenne supervise chaque chantier en personne. En cas d'anomalie, nous intervenons sans frais.",
+        why_c2_foot: "Certificat officiel de garantie A.S.T.",
+
+        why_c3_tag: "03. Service Intégré",
+        why_c3_title: "Un interlocuteur unique et responsable",
+        why_c3_desc: "Besoin de cloisons Gyproc, de laquage au pistolet pour portes ou d'étanchéité de cave ? Nos 12 artisans chevronnés maîtrisent l'intégralité du chantier. Un seul planning, une seule facture.",
+        why_c3_foot: "Planning rigoureux & respect des délais",
+
+        table_col_feature: "Critère de Qualité",
+        table_col_cheap: "Peintre Discount Standard",
+        table_col_ast: "Excellence A.S.T.",
+        t_row1_title: "Période de garantie",
+        t_row1_bad: "Minimum légal / Souvent aucune",
+        t_row1_good: "4 à 6 Ans par Écrit",
+        t_row2_title: "Ponçage et préparation",
+        t_row2_bad: "Ponçage manuel (très poussiéreux)",
+        t_row2_good: "Mécanique 99.9% sans poussière (Festool)",
+        t_row3_title: "Qualité de peinture",
+        t_row3_bad: "Discount diluée à l'eau",
+        t_row3_good: "100% Professionnelle Sikkens & Boss",
+        t_row4_title: "Équipe sur chantier",
+        t_row4_bad: "Sous-traitants intermittents",
+        t_row4_good: "12 Artisans belges salariés et fidèles",
+
+        services_kicker: "Nos Savoir-Faire A.S.T.",
+        services_title: "Finitions d'exception pour intérieurs, façades, kots étudiants et rénovations complètes.",
+        services_link: "Demander une visite sur place",
+        s1_tag: "Intérieur",
+        s1_title: "Peinture Intérieure & Toile de Rénovation",
+        s1_desc: "Finition tendue irréprochable avec peintures minérales, enduits de lissage et toiles de verre de haute qualité. Extraction Festool pour un intérieur préservé.",
+        s1_f1: "Ponçage 99.9% sans poussière",
+        s1_f2: "Traitement des fissures et enduit fin",
+        s1_f3: "Peintures lavables haute durabilité",
+
+        s2_tag: "Extérieur",
+        s2_title: "Peinture Extérieure & Façades",
+        s2_desc: "Protection hydrofuge et anti-UV avec peintures aux silicates perspirantes et chaulage traditionnel. Façades protégées contre le gel et les mousses.",
+        s2_f1: "Systèmes de façade perspirants",
+        s2_f2: "Protection boiseries et corniches",
+        s2_f3: "Échafaudages sécurisés inclus",
+
+        s3_tag: "Façades",
+        s3_title: "Nettoyage de Façade, Kalei & Ravalement",
+        s3_desc: "Nettoyage vapeur doux, rejointoiement et chaulage traditionnel minéral. Restaure le cachet authentique de votre bien.",
+        s3_f1: "Nettoyage respectueux des matériaux",
+        s3_f2: "Kalei minéral respirant",
+        s3_f3: "Réparation des fissures et pierres",
+
+        s4_tag: "Menuiseries",
+        s4_title: "Entretien Châssis & Portes en Bois",
+        s4_desc: "Traitement préventif et curatif des boiseries extérieures et intérieures. Élimination du pourrissement du bois et laquage microporeux durable.",
+        s4_f1: "Réparations résine époxy anti-pourriture",
+        s4_f2: "Finition laquée lisse au pistolet",
+        s4_f3: "Haute résistance aux intempéries",
+
+        s5_tag: "Rénovation",
+        s5_title: "Cloisons Gyproc, Faux Plafonds & Mortex",
+        s5_desc: "Aménagement d'espaces intérieurs, kots étudiants et bureaux avec cloisons acoustiques et enduits décoratifs Mortex sans joints.",
+        s5_f1: "Isolation acoustique et thermique",
+        s5_f2: "Enduisage soigné prêt à peindre",
+        s5_f3: "Mortex haut de gamme sol et mur",
+
+        s6_tag: "Rénovation Totale",
+        s6_title: "Rénovation de Salle de Bain & Intérieur",
+        s6_desc: "De la démolition aux finitions clés en main de salles de bain modernes, carrelages et parquets. Une équipe unique et coordonnée.",
+        s6_f1: "Douches à l'italienne étanches",
+        s6_f2: "Pose de carrelages et sols",
+        s6_f3: "Interlocuteur unique de A à Z",
+
+        s7_tag: "Étanchéité",
+        s7_title: "Traitement de l'Humidité & Hydrofuge",
+        s7_desc: "Élimination définitive des remontées capillaires et infiltrations par injections certifiées et cuvelage de cave garanti.",
+        s7_f1: "Injections de résine garanties",
+        s7_f2: "Cuvelage de caves étanche",
+        s7_f3: "Hydrofugation de façade incolore",
+
+        s8_tag: "Toitures",
+        s8_title: "Démoussage Toiture & Réparation Gouttières",
+        s8_desc: "Nettoyage et traitement hydrofuge des tuiles, entretien et soudure des gouttières en zinc pour éviter toute infiltration.",
+        s8_f1: "Traitement anti-mousse durable",
+        s8_f2: "Réfection des corniches et zinc",
+        s8_f3: "Prévention des dégâts des eaux",
+
+        s9_tag: "Expertises",
+        s9_title: "Dégâts des Eaux & Dossiers Assurance",
+        s9_desc: "Diagnostic hygrométrique précis, devis détaillé pour votre assureur et prise en charge intégrale des travaux de remise en état.",
+        s9_f1: "Devis aux normes des compagnies",
+        s9_f2: "Assèchement et sécurisation rapide",
+        s9_f3: "Rénovation complète après sinistre",
+        s_btn: "Demander un devis pour ce service",
+
+        ba_kicker: "L'Excellence en Images",
+        ba_title: "La Métamorphose A.S.T. : Glissez pour comparer.",
+        ba_intro: "Faites glisser le curseur de gauche à droite pour apprécier le soin apporté à la préparation et au rendu final.",
+        ba_p1: "Maison de Maître Louvain",
+        ba_p2: "Façade Villa",
+        ba_p3: "Laquage Cuisine Design",
+        ba_before_label: "AVANT : DÉGRADÉ",
+        ba_after_label: "APRÈS : FINITION A.S.T.",
+        ba_drag_hint: "↔ Glissez le curseur pour comparer",
+
+        warranty_badge: "Unique en Région Flamande",
+        warranty_title: "Notre Garantie Écrite de 4 à 6 Ans. Sans équivoque.",
+        warranty_p1: "Nombreux sont ceux qui promettent oralement monts et merveilles, pour disparaître aux premières cloques. Chez A.S.T., chaque chantier fait l'objet d'un Certificat de Garantie écrit et paraphé.",
+        w_item1_title: "Garantie d'Adhérence",
+        w_item1_desc: "Aucun écaillage ni décollement",
+        w_item2_title: "Stabilité UV & Couleur",
+        w_item2_desc: "Maintien des pigments et du brillant",
+        w_item3_title: "Anti-Moisissures & Humidité",
+        w_item3_desc: "Respirabilité permanente des parois",
+        w_item4_title: "Suivi Direct du Patron",
+        w_item4_desc: "Contrôle par M. Vandevenne en personne",
+        warranty_quote: "\"Nous appliquons des standards bien plus élevés que la moyenne du secteur. C'est pourquoi nous formalisons cette garantie par écrit sans hésiter.\" — Jeroen Vandevenne, Gérant",
+
+        funnel_kicker: "Simple & Sans Engagement",
+        funnel_title: "Configurez votre projet & obtenez un devis.",
+        funnel_subtitle: "En 3 étapes rapides, recevez une estimation claire. Sans engagement, avec visite sur place offerte par le gérant.",
+        funnel_step1_label: "Étape 1",
+        funnel_step1_name: "Travaux",
+        funnel_step2_label: "Étape 2",
+        funnel_step2_name: "Bien & Délais",
+        funnel_step3_label: "Étape 3",
+        funnel_step3_name: "Contact & RDV",
+
+        f_s1_heading: "Quels travaux souhaitez-vous réaliser ?",
+        f_s1_instruction: "Sélectionnez un ou plusieurs domaines d'intervention :",
+        f_opt_interior: "Peinture Intérieure",
+        f_opt_interior_desc: "Murs, plafonds, boiseries, enduits de lissage",
+        f_opt_exterior: "Peinture Extérieure",
+        f_opt_exterior_desc: "Façades, châssis, corniches, chaulage",
+        f_opt_windows: "Châssis & Portes",
+        f_opt_windows_desc: "Restauration, laquage au pistolet & vernis",
+        f_opt_moisture: "Humidité & Étanchéité",
+        f_opt_moisture_desc: "Cuvelage cave, remontées capillaires, hydrofuge",
+        f_opt_gyproc: "Gyproc & Cloisons",
+        f_opt_gyproc_desc: "Plafonds, isolation phonique & cloisons",
+        f_opt_reno: "Rénovation Complète",
+        f_opt_reno_desc: "Salles de bain, Mortex, parquets & agencement",
+        f_opt_roof: "Toitures & Gouttières",
+        f_opt_roof_desc: "Démoussage, étanchéité & zinc",
+        f_opt_insurance: "Dégât des Eaux",
+        f_opt_insurance_desc: "Dossier d'expertise assurance & remise en état",
+        f_opt_spray: "Laquage au Pistolet",
+        f_opt_spray_desc: "Cuisines, radiateurs, escaliers & portes",
+        f_btn_next: "Étape Suivante : Bien & Délais",
+
+        f_s2_heading: "De quel type de bien s'agit-il ?",
+        f_s2_instruction: "Cela nous permet d'anticiper la méthode et les échafaudages nécessaires :",
+        f_prop_student: "Kot Étudiant / Résidence",
+        f_prop_house: "Maison / Villa",
+        f_prop_app: "Appartement",
+        f_prop_mansion: "Maison de Maître",
+        f_prop_comm: "Commerce / Bureaux",
+        f_prop_vme: "Copropriété / Cage d'escalier",
+        f_timing_title: "Délai souhaité pour l'intervention :",
+        f_time_asap: "Au plus vite (Urgent)",
+        f_time_months: "Dans les 1 à 3 mois",
+        f_time_later: "Projet futur / Plus tard cette année",
+        f_btn_prev: "Précédent",
+        f_btn_next2: "Dernière Étape : Coordonnées",
+
+        f_s3_heading: "Où pouvons-nous vous transmettre le devis ?",
+        f_s3_instruction: "Le gérant Jeroen Vandevenne vous contactera sous 24h pour organiser un diagnostic gratuit sur place.",
+        f_label_name: "Nom & Prénom *",
+        f_ph_name: "ex. Sophie De Smet",
+        f_label_phone: "Numéro de Téléphone *",
+        f_ph_phone: "ex. 0498 52 23 14",
+        f_label_email: "Adresse Email *",
+        f_ph_email: "ex. sophie@exemple.be",
+        f_label_city: "Commune / Code Postal *",
+        f_ph_city: "ex. 3000 Louvain",
+        f_label_notes: "Précisions ou surface approximative (optionnel)",
+        f_ph_notes: "Décrivez les particularités de votre projet...",
+        f_privacy: "Vos données restent 100% confidentielles et ne sont jamais transmises à des tiers.",
+        f_btn_submit: "Envoyer ma Demande",
+
+        modal_success_title: "Merci pour votre demande !",
+        modal_success_desc: "Vos informations ont bien été enregistrées. Le gérant Jeroen Vandevenne analyse votre demande et vous appellera sous 24 heures pour convenir d'un rendez-vous.",
+        modal_ref: "Numéro de référence :",
+        modal_gar: "Couverture de garantie :",
+        modal_contact_person: "Pris en charge par :",
+        modal_btn_close: "Fermer & Retour au Site",
+
+        rev_kicker: "Témoignages Réels",
+        rev_title: "Ce que disent nos clients dans le Brabant.",
+        rev1_text: "\"Notre maison est tellement plus fraîche et lumineuse après le passage d'A.S.T. ! Un travail remarquable a été réalisé par Robin et toute l'équipe. Finitions soignées, chantier propre et ponctualité exemplaire.\"",
+        rev1_loc: "Louvain • Peinture intérieure et extérieure",
+        rev2_text: "\"Notre façade souffrait d'infiltrations dues au travail bâclé d'un peintre low-cost. A.S.T. a effectué un diagnostic hygrométrique sérieux et posé un système minéral respirant avec 6 ans de garantie écrite. De vrais professionnels.\"",
+        rev2_loc: "Tervuren • Rénovation façade & hydrofuge",
+        rev3_text: "\"Nos portes intérieures et façades de cuisine laquées au pistolet sont aussi impeccables que neuves sorties d'usine. Chaque soir, le chantier était aspiré et rangé. Une équipe remarquable !\"",
+        rev3_loc: "Kessel-Lo • Laquage & Finitions haut de gamme",
+
+        faq_kicker: "Transparence Totale",
+        faq_title: "Questions fréquentes sur nos méthodes et notre garantie.",
+        faq_q1: "Pourquoi vos tarifs sont-ils plus élevés que ceux de peintres bon marché ?",
+        faq_a1: "La qualité réside dans les heures invisibles : ponçage intégral sous aspiration HEPA, calfeutrement de microfissures, primaires fixateurs et utilisation exclusive de peintures non diluées Sikkens et Boss Paints. Avec 12 ouvriers qualifiés salariés et une garantie écrite de 4 à 6 ans, vous évitez de repeindre après 2 ans, économisant ainsi des milliers d'euros sur la durée.",
+        faq_q2: "Que couvre exactement la garantie de 4 à 6 ans ?",
+        faq_a2: "Vous recevez un certificat signé par Jeroen Vandevenne couvrant l'adhérence du film de peinture, la résistance aux UV et la tenue contre l'effritement. En cas de défaut imprévu, nous réintervenons sans frais et sans discussion.",
+        faq_q3: "Quel niveau de poussière et de dérangement faut-il prévoir ?",
+        faq_a3: "Quasiment nul ! Nous utilisons les systèmes de ponçage Festool avec filtres HEPA captant 99,9% des poussières à la source. Les sols et mobiliers sont intégralement bâchés avec des protections respirantes professionnelles.",
+        faq_q4: "Rénovez-vous également les kots ou résidences étudiantes à Louvain ?",
+        faq_a4: "Absolument ! Nous intervenons régulièrement à Louvain pour rénover rapidement et durablement kots étudiants, communs et sanitaires durant les périodes estivales ou intersessions.",
+
+        contact_kicker: "Contact Direct",
+        contact_title: "Visitez notre atelier ou planifions une visite.",
+        contact_desc: "Un projet pour votre villa, appartement, kot étudiant ou espace professionnel ? Le gérant Jeroen Vandevenne se tient à votre disposition pour vous conseiller avec précision.",
+        contact_addr_title: "Siège & Atelier de Laquage",
+        contact_phone_title: "Par Téléphone",
+        contact_hours: "Du Lundi au Vendredi : 07h30 – 18h30",
+        contact_reply: "Réponse sous 24 heures ouvrées",
+        quick_contact_title: "Une question directe ?",
+        quick_contact_desc: "Laissez-nous un message, nous vous rappelons le jour même.",
+        quick_label_msg: "Votre message ou projet",
+        quick_fast_reply: "Rappel rapide garanti",
+        quick_btn: "Envoyer le Message",
+        map_kicker: "Localisation & Accès",
+        map_title: "Idéalement situé à Wilsele (Louvain), actif dans tout le Brabant flamand & Bruxelles.",
+        map_btn: "Itinéraire via Google Maps",
+        footer_bio: "Spécialiste agréé en peinture haut de gamme, rénovations et étanchéité. 12 artisans de métier et garantie écrite de 4 à 6 ans sur chaque réalisation.",
+        footer_services: "Services",
+        footer_guarantees: "Garanties & Zones"
+      },
+      en: {
+        top_bar_craft: "35+ Years Experience (Since 1989)",
+        top_bar_warranty: "4 to 6-year written warranty",
+        top_bar_onsite: "Founder Jeroen Vandevenne on-site",
+        logo_subtitle: "Painting, Renovation & Waterproofing",
+        nav_why: "Why A.S.T.",
+        nav_services: "Services",
+        nav_warranty: "4–6 Year Warranty",
+        nav_projects: "Projects",
+        nav_reviews: "Reviews",
+        nav_contact: "Contact",
+        nav_cta: "Request Free Quote",
+
+        hero_pill_years: "35+ YEARS OF MASTERY",
+        hero_pill_region: "Wilsele, Leuven & Flemish Brabant",
+        hero_title_p1: "Premium painting & renovation craftsmanship backed by a",
+        hero_title_highlight: "4 to 6-year written warranty.",
+        hero_subtitle: "Where budget painters rush through superficial coats, our 12 certified master artisans ensure uncompromising surface prep, industrial precision, and decades of lasting property protection.",
+        hero_btn_quote: "Request Quote & Inspection",
+        hero_btn_portfolio: "Explore Portfolio",
+
+        badge1_title: "4–6 Year Warranty",
+        badge1_desc: "Formally written into contract",
+        badge2_title: "12 In-House Craftsmen",
+        badge2_desc: "No revolving subcontractors",
+        badge3_title: "Rating 4.9 / 5.0",
+        badge3_desc: "Over 140 satisfied homeowners",
+
+        partner_sikkens: "Sikkens Certified Master Painter",
+        partner_boss: "Boss Paints Premium Partner",
+        partner_confederatie: "Certified Bouwunie & Embuild",
+        partner_festool: "Dust-Free Sanding (Festool HEPA)",
+
+        why_kicker: "Honest Craftsmanship",
+        why_title: "Why cheap painting jobs always end up costing double after two seasons.",
+        why_intro: "A rock-bottom quote looks appealing until peeling paint, cracks, or moisture bubbles surface after 18 months. A.S.T. invests where others cut corners: thorough surface preparation, undiluted premium coatings, and an unbending written guarantee.",
+
+        why_c1_tag: "01. Prep & Paint Systems",
+        why_c1_title: "70% of our work only reveals itself after 5 years",
+        why_c1_desc: "Budget outfits slap cheap paint over dusty walls. We spend the bulk of our time deep-cleaning, testing substrate moisture, reinforcing with non-woven fleece, and applying microporous primers from Sikkens and Boss Paints.",
+        why_c1_foot: "No flaking, peeling, or yellowing",
+
+        why_c2_tag: "02. The A.S.T. Reassurance",
+        why_c2_title: "4 to 6-year written warranty",
+        why_c2_desc: "Unlike verbal promises, every finished project comes with a signed Warranty Certificate. Founder Jeroen Vandevenne inspects every worksite personally. If any defect appears, we fix it at zero cost.",
+        why_c2_foot: "Official A.S.T. Warranty Certificate",
+
+        why_c3_tag: "03. Complete Single-Source Service",
+        why_c3_title: "No finger-pointing between trades",
+        why_c3_desc: "Need drywall partitions, airless spray lacquer for doors, or basement waterproofing? Our 12 seasoned craftsmen handle the complete scope. One schedule, one invoice, and total accountability.",
+        why_c3_foot: "Punctual schedule & turnkey delivery",
+
+        table_col_feature: "Quality Benchmark",
+        table_col_cheap: "Standard Budget Painter",
+        table_col_ast: "A.S.T. Master Craft",
+        t_row1_title: "Warranty Period",
+        t_row1_bad: "Statutory minimum / Often none",
+        t_row1_good: "4 to 6 Years in Writing",
+        t_row2_title: "Surface Prep & Sanding",
+        t_row2_bad: "Quick manual sanding (dusty)",
+        t_row2_good: "Machined 99.9% dust-free (Festool)",
+        t_row3_title: "Paint Quality",
+        t_row3_bad: "Watered-down DIY store paint",
+        t_row3_good: "100% Pro Sikkens & Boss Paints",
+        t_row4_title: "On-site Crew",
+        t_row4_bad: "Unvetted freelance subcontractors",
+        t_row4_good: "12 Permanent Belgian master artisans",
+
+        services_kicker: "A.S.T. Disciplines",
+        services_title: "Exemplary finishing for interiors, facades, student housing, and full renovations.",
+        services_link: "Request an on-site consultation",
+        s1_tag: "Interior",
+        s1_title: "Interior Painting & Wallcoverings",
+        s1_desc: "Immaculate finishes with mineral paints, crack-bridging fleece, and fine skim-coating. Festool extractors keep your living space pristine throughout.",
+        s1_f1: "99.9% Dust-free sanding",
+        s1_f2: "Micro-crack and plaster repairs",
+        s1_f3: "Washable, durable high-traffic paints",
+
+        s2_tag: "Exterior",
+        s2_title: "Exterior Painting & Facades",
+        s2_desc: "Protection against torrential rain, frost, and UV with breathable silicate coatings and traditional lime washing. Moss and crack resistant.",
+        s2_f1: "Vapour-permeable facade systems",
+        s2_f2: "Joinery and cornice wood protection",
+        s2_f3: "Certified scaffolding included",
+
+        s3_tag: "Facades",
+        s3_title: "Facade Cleaning, Limewash & Masonry",
+        s3_desc: "Gentle steam cleaning, repointing, and breathable mineral limewashing (kalei). Restores heritage charm and weather resilience.",
+        s3_f1: "Non-destructive brick cleaning",
+        s3_f2: "Breathable mineral limewash",
+        s3_f3: "Joint and stone sill restoration",
+
+        s4_tag: "Joinery",
+        s4_title: "Maintenance of Timber Windows & Doors",
+        s4_desc: "Preventive and restorative painting for external joinery, garage doors, and interior woodwork. Rot remediation and spray lacquering.",
+        s4_f1: "Epoxy rot repair & stabilization",
+        s4_f2: "Flawless spray lacquer finish",
+        s4_f3: "Weather-resistant microporous coatings",
+
+        s5_tag: "Renovation",
+        s5_title: "Drywall, Partitions & Mortex Stucco",
+        s5_desc: "Interior redesign for residential homes, student residences, and offices with acoustic stud walls, suspended ceilings, and seamless Mortex.",
+        s5_f1: "Sound-dampening acoustic partitions",
+        s5_f2: "Level 4 paint-ready skim coat",
+        s5_f3: "Seamless Mortex mineral concrete",
+
+        s6_tag: "Turnkey",
+        s6_title: "Bathroom Renovations & Makeovers",
+        s6_desc: "From demolition to full turnkey delivery of designer bathrooms, floor coverings, and joinery. Single team, single project manager.",
+        s6_f1: "Fully waterproof walk-in showers",
+        s6_f2: "Floor tiling & engineered timber",
+        s6_f3: "Plumbing, tiling & painting unified",
+
+        s7_tag: "Waterproofing",
+        s7_title: "Moisture Remediation & Hydrofuge",
+        s7_desc: "Definitive resolution of rising damp and lateral water ingress via certified injection gels and basement tanking membranes.",
+        s7_f1: "Certified chemical DPC injections",
+        s7_f2: "Heavy-duty basement tanking",
+        s7_f3: "Colourless facade hydrofuge coating",
+
+        s8_tag: "Roofs & Gutters",
+        s8_title: "Roof De-mossing & Gutter Repairs",
+        s8_desc: "Tile de-mossing and protective hydrophobic sealants, zinc gutter repairs, and downpipe maintenance to safeguard your masonry.",
+        s8_f1: "Eco-friendly anti-fungal treatment",
+        s8_f2: "Soldered zinc gutter repair",
+        s8_f3: "Eliminates water infiltration at the eaves",
+
+        s9_tag: "Insurance",
+        s9_title: "Water Damage & Insurance Claims",
+        s9_desc: "Comprehensive moisture mapping, official itemized claims for insurance adjusters, and expedited turnkey restoration.",
+        s9_f1: "Compliant insurance assessment reports",
+        s9_f2: "Rapid emergency drying & stabilization",
+        s9_f3: "Full multi-trade reinstatement",
+        s_btn: "Request quote for this discipline",
+
+        ba_kicker: "Craftsmanship in Action",
+        ba_title: "The A.S.T. Transformation: Drag to compare.",
+        ba_intro: "Slide the divider to see the dramatic before-and-after results delivered by our rigorous prep and flawless spray lacquer.",
+        ba_p1: "Townhouse Leuven",
+        ba_p2: "Villa Facade Restoration",
+        ba_p3: "Kitchen Spray Lacquer",
+        ba_before_label: "BEFORE: WEATHERED",
+        ba_after_label: "AFTER: A.S.T. FINISH",
+        ba_drag_hint: "↔ Drag slider handle to compare",
+
+        warranty_badge: "Unmatched in Flanders",
+        warranty_title: "Our 4 to 6-Year Written Warranty. No fine print.",
+        warranty_p1: "Many contractors make casual verbal promises, only to vanish when coats peel after the first frost. At A.S.T., you receive an official, signed Warranty Certificate tied directly to your home.",
+        w_item1_title: "Adhesion Guarantee",
+        w_item1_desc: "Zero flaking, peeling, or blistering",
+        w_item2_title: "UV & Colour Fastness",
+        w_item2_desc: "Preserves exact sheen and rich pigmentation",
+        w_item3_title: "Anti-Mold & Moisture Defense",
+        w_item3_desc: "Continuous micro-porous wall breathability",
+        w_item4_title: "Owner-Led Supervision",
+        w_item4_desc: "Personally inspected by Jeroen Vandevenne",
+        warranty_quote: "\"We hold ourselves to far higher standards than the industry standard. That is why we commit to this guarantee in writing with absolute confidence.\" — Jeroen Vandevenne, Founder",
+
+        funnel_kicker: "Effortless & Free",
+        funnel_title: "Configure your project & receive expert advice.",
+        funnel_subtitle: "3 straightforward steps to a detailed preliminary quote. No obligations, including a free on-site survey by the founder.",
+        funnel_step1_label: "Step 1",
+        funnel_step1_name: "Work Type",
+        funnel_step2_label: "Step 2",
+        funnel_step2_name: "Property & Time",
+        funnel_step3_label: "Step 3",
+        funnel_step3_name: "Contact & Survey",
+
+        f_s1_heading: "Which services does your project require?",
+        f_s1_instruction: "Select one or more trades for your property:",
+        f_opt_interior: "Interior Painting",
+        f_opt_interior_desc: "Walls, ceilings, woodwork, skimming",
+        f_opt_exterior: "Exterior Painting",
+        f_opt_exterior_desc: "Facades, window frames, cornices, lime wash",
+        f_opt_windows: "Windows & Doors",
+        f_opt_windows_desc: "Restoration, spray lacquering & UV finishes",
+        f_opt_moisture: "Waterproofing & Damp",
+        f_opt_moisture_desc: "Cellar waterproofing, rising damp, hydrofuge",
+        f_opt_gyproc: "Drywall & Partitions",
+        f_opt_gyproc_desc: "Ceilings, acoustic walls & thermal lining",
+        f_opt_reno: "Turnkey Renovation",
+        f_opt_reno_desc: "Bathrooms, Mortex, flooring & carpentry",
+        f_opt_roof: "Roofs & Gutters",
+        f_opt_roof_desc: "De-mossing, cleaning & zinc restoration",
+        f_opt_insurance: "Water Damage Claim",
+        f_opt_insurance_desc: "Survey & quotation for insurance adjusters",
+        f_opt_spray: "Spray Lacquering",
+        f_opt_spray_desc: "Kitchens, radiators, staircases & doors",
+        f_btn_next: "Next Step: Property & Timeline",
+
+        f_s2_heading: "What type of building is this?",
+        f_s2_instruction: "This allows us to evaluate scaffolding, timing, and appropriate site setup:",
+        f_prop_student: "Student Room / Residence",
+        f_prop_house: "Detached Villa / House",
+        f_prop_app: "Apartment / Penthouse",
+        f_prop_mansion: "Historic Townhouse",
+        f_prop_comm: "Commercial / Office",
+        f_prop_vme: "HOA / Communal Stairwell",
+        f_timing_title: "Desired start date:",
+        f_time_asap: "As soon as possible (Urgent)",
+        f_time_months: "Within 1 to 3 months",
+        f_time_later: "Planning stage / Later this year",
+        f_btn_prev: "Previous",
+        f_btn_next2: "Final Step: Contact Details",
+
+        f_s3_heading: "Where should we send your preliminary estimate?",
+        f_s3_instruction: "Founder Jeroen Vandevenne will contact you within 24 hours to arrange an on-site inspection.",
+        f_label_name: "Full Name *",
+        f_ph_name: "e.g. Sophie De Smet",
+        f_label_phone: "Phone Number *",
+        f_ph_phone: "e.g. +32 498 52 23 14",
+        f_label_email: "Email Address *",
+        f_ph_email: "e.g. sophie@example.be",
+        f_label_city: "City / Postal Code *",
+        f_ph_city: "e.g. 3000 Leuven",
+        f_label_notes: "Additional notes or rough square meters (optional)",
+        f_ph_notes: "Describe any special architectural details or requirements...",
+        f_privacy: "Your details remain 100% confidential and are never shared with third parties.",
+        f_btn_submit: "Submit Request",
+
+        modal_success_title: "Thank you for your request!",
+        modal_success_desc: "We have received your project details. Founder Jeroen Vandevenne will review your request and call within 24 hours to schedule an obligation-free inspection.",
+        modal_ref: "Reference Number:",
+        modal_gar: "Warranty Protection:",
+        modal_contact_person: "Handled by:",
+        modal_btn_close: "Close & Return to Website",
+
+        rev_kicker: "Owner Testimonials",
+        rev_title: "What clients across Leuven and Flemish Brabant say.",
+        rev1_text: "\"Our house looks so much fresher and brighter after A.S.T. completed the work! Beautiful craftsmanship by Robin and the rest of the permanent crew. Clean, tidy, and reliable.\"",
+        rev1_loc: "Leuven • Interior and exterior painting",
+        rev2_text: "\"Our facade had suffered years of flaking paint after a previous 'bargain' painter's job. A.S.T. performed a rigorous moisture analysis and applied a breathable silicate system backed by a 6-year written warranty. True craftsmen.\"",
+        rev2_loc: "Tervuren • Facade restoration & hydrofuge",
+        rev3_text: "\"Our interior doors and kitchen cabinetry were spray-lacquered in their booth: smooth as glass, far better than brand-new factory units. Every evening the work area was vacuumed clean. Exceptional team!\"",
+        rev3_loc: "Kessel-Lo • Spray lacquering & turnkey finishes",
+
+        faq_kicker: "Clarity Upfront",
+        faq_title: "Frequently asked questions about our process and warranty.",
+        faq_q1: "Why are your prices higher than discount painting contractors?",
+        faq_a1: "True quality is found in the hours you don't immediately see: dust-free HEPA sanding, filling micro-fissures, deep-penetrating primers, and 100% undiluted professional coatings from Sikkens and Boss Paints. Backed by 12 permanent salaried artisans and a 4-to-6-year written guarantee, you won't need to repaint after 2 years—saving thousands over time.",
+        faq_q2: "What is covered under the 4 to 6-year written warranty?",
+        faq_a2: "Upon project completion, you receive an official certificate signed by founder Jeroen Vandevenne covering film adhesion, anti-blistering, and UV resistance. Should any issue emerge, our team rectifies it promptly at zero cost.",
+        faq_q3: "How much dust and inconvenience should we anticipate?",
+        faq_a3: "Minimal. We utilize industrial Festool extraction units that capture 99.9% of sanding dust at the source. Floors, fixtures, and furniture are covered with protective breathable sheeting, and sites are swept clean daily.",
+        faq_q4: "Do you also renovate student housing or kots in Leuven?",
+        faq_a4: "Yes, frequently! We are very active in Leuven and specialize in fast, durable turnarounds of student rooms, shared kitchens, and full student residences during summer or vacation breaks.",
+
+        contact_kicker: "Personal Contact",
+        contact_title: "Visit our workshop or arrange an on-site survey.",
+        contact_desc: "Planning a project for your home, villa, student property, or commercial space? Founder Jeroen Vandevenne is available to discuss your specifications and provide a transparent quote.",
+        contact_addr_title: "Headquarters & Spray Workshop",
+        contact_phone_title: "Telephone",
+        contact_hours: "Monday to Friday: 07:30 – 18:30",
+        contact_reply: "Response within 24 working hours",
+        quick_contact_title: "Have a quick question?",
+        quick_contact_desc: "Send us a brief inquiry, and we will call you back today.",
+        quick_label_msg: "Your question or project description",
+        quick_fast_reply: "Reply within 24 hours",
+        quick_btn: "Send Inquiry",
+        map_kicker: "Location & Accessibility",
+        map_title: "Centrally located in Wilsele (Leuven), serving all of Flemish Brabant & Brussels.",
+        map_btn: "Get Directions on Google Maps",
+        footer_bio: "Certified specialist in master painting, facade restoration, spray lacquering, and waterproofing. 12 permanent craftsmen and a 4 to 6-year written warranty on every contract.",
+        footer_services: "Services",
+        footer_guarantees: "Guarantees & Areas"
+      }
+    };
+
+    let currentLang = 'nl';
+
+    function setLanguage(lang) {
+      if (!translations[lang]) return;
+      currentLang = lang;
+      try {
+        localStorage.setItem('ast_lang', lang);
+      } catch (e) {}
+
+      // Update text in elements with data-i18n
+      document.querySelectorAll('[data-i18n]').forEach(el => {
+        const key = el.getAttribute('data-i18n');
+        if (translations[lang][key]) {
+          el.innerHTML = translations[lang][key];
+        }
+      });
+
+      // Update placeholders
+      document.querySelectorAll('[data-i18n-placeholder]').forEach(el => {
+        const key = el.getAttribute('data-i18n-placeholder');
+        if (translations[lang][key]) {
+          el.placeholder = translations[lang][key];
+        }
+      });
+
+      // Update Active Button styling with AST Blue
+      ['nl', 'fr', 'en'].forEach(l => {
+        const btn = document.getElementById('lang-btn-' + l);
+        if (btn) {
+          if (l === lang) {
+            btn.className = "lang-btn px-2.5 py-1 rounded-lg bg-brand-blue text-white font-bold shadow-sm transition-all";
+          } else {
+            btn.className = "lang-btn px-2.5 py-1 rounded-lg text-slate-600 dark:text-slate-300 hover:text-brand-dark dark:hover:text-white transition-all";
+          }
+        }
+      });
+
+      // Update project detail text according to current comparison tab
+      updateComparisonDetailText();
+    }
+
+    // Initialize on DOM ready
+    window.addEventListener('DOMContentLoaded', () => {
+      let saved = 'nl';
+      try {
+        saved = localStorage.getItem('ast_lang') || 'nl';
+      } catch(e) {}
+      setLanguage(saved);
+      initBeforeAfterSlider();
+
+      // Initialize theme icon state
+      const isDark = document.documentElement.classList.contains('dark');
+      updateThemeIcon(isDark);
+
+      // Initialize option box highlights for pre-checked items
+      document.querySelectorAll('input[name="work_type"]').forEach(cb => {
+        updateOptionStyle(cb);
+      });
+    });
+
+    /* =========================================================================
+       3. INTERACTIVE BEFORE & AFTER SLIDER LOGIC
+       ========================================================================= */
+    const comparisonProjects = {
+      herenhuis: {
+        after: "https://images.unsplash.com/photo-1600585154340-be6161a56a0c?auto=format&fit=crop&w=1400&q=80",
+        before: "https://images.unsplash.com/photo-1513694203232-719a280e022f?auto=format&fit=crop&w=1400&q=80",
+        details: {
+          nl: "Herenwoning Kessel-Lo: Volledige vliesbehangtechniek & plafondrestauratie. 5 jaar schriftelijke garantie toegekend.",
+          fr: "Maison de Maître Kessel-Lo : Toile de rénovation tendue & restauration moulures. 5 ans de garantie écrite.",
+          en: "Kessel-Lo Townhouse: Full non-woven fleece lining & plaster moulding restoration. 5-year warranty granted."
+        }
+      },
+      villa: {
+        after: "https://images.unsplash.com/photo-1512917774080-9991f1c4c750?auto=format&fit=crop&w=1400&q=80",
+        before: "https://images.unsplash.com/photo-1590490360182-c33d57733427?auto=format&fit=crop&w=1400&q=80",
+        details: {
+          nl: "Villa Heverlee: Gevelreiniging, barstfixatie en dampopen silicaatsysteem. 6 jaar schriftelijke garantie.",
+          fr: "Villa Heverlee : Nettoyage haute pression, traitement des fissures et silicates respirants. 6 ans de garantie.",
+          en: "Villa Heverlee: Facade restoration, crack bridge repair, and breathable silicate paint. 6-year warranty."
+        }
+      },
+      keuken: {
+        after: "https://images.unsplash.com/photo-1556911220-e15b29be8c8f?auto=format&fit=crop&w=1400&q=80",
+        before: "https://images.unsplash.com/photo-1507089947368-19c1da9775ae?auto=format&fit=crop&w=1400&q=80",
+        details: {
+          nl: "Design Keuken Leuven: Airless 2-componenten lakspuitwerk in mat leisteen. Volledig kras- en waterbestendig.",
+          fr: "Cuisine Design Louvain : Laquage 2-composants Airless satiné ardoise. Résistance absolue aux rayures.",
+          en: "Design Kitchen Leuven: Airless 2-part polyurethane lacquer in slate finish. Scratch & moisture proof."
+        }
+      }
+    };
+
+    let activeProjectKey = 'herenhuis';
+
+    function switchComparisonProject(key) {
+      if (!comparisonProjects[key]) return;
+      activeProjectKey = key;
+
+      const imgAfter = document.getElementById('img-after');
+      const imgBefore = document.getElementById('img-before');
+      
+      if (imgAfter) imgAfter.src = comparisonProjects[key].after;
+      if (imgBefore) imgBefore.src = comparisonProjects[key].before;
+
+      ['herenhuis', 'villa', 'keuken'].forEach(k => {
+        const tab = document.getElementById('tab-' + k);
+        if (tab) {
+          if (k === key) {
+            tab.className = "px-4 py-2 text-xs font-bold rounded-lg bg-brand-blue text-white transition-all shadow";
+          } else {
+            tab.className = "px-4 py-2 text-xs font-semibold rounded-lg text-slate-400 hover:text-white transition-all";
+          }
+        }
+      });
+
+      updateComparisonDetailText();
+    }
+
+    function updateComparisonDetailText() {
+      const detailEl = document.getElementById('project-detail-text');
+      if (detailEl && comparisonProjects[activeProjectKey]) {
+        detailEl.textContent = comparisonProjects[activeProjectKey].details[currentLang] || comparisonProjects[activeProjectKey].details['nl'];
+      }
+    }
+
+    function initBeforeAfterSlider() {
+      const container = document.getElementById('ba-container');
+      const sliderRange = document.getElementById('slider-range');
+      const imgBefore = document.getElementById('img-before');
+      const sliderLine = document.getElementById('slider-line');
+
+      if (!sliderRange || !imgBefore || !sliderLine || !container) return;
+
+      function updateSlider(val) {
+        val = Math.max(0, Math.min(100, Number(val)));
+        imgBefore.style.clipPath = `inset(0 ${100 - val}% 0 0)`;
+        sliderLine.style.left = val + '%';
+      }
+
+      sliderRange.addEventListener('input', (e) => {
+        updateSlider(e.target.value);
+      });
+
+      // Mouse drag inside container
+      let isDragging = false;
+      function handleMove(clientX) {
+        const rect = container.getBoundingClientRect();
+        let posX = clientX - rect.left;
+        if (posX < 0) posX = 0;
+        if (posX > rect.width) posX = rect.width;
+        const percentage = (posX / rect.width) * 100;
+        sliderRange.value = percentage;
+        updateSlider(percentage);
+      }
+
+      container.addEventListener('mousedown', (e) => {
+        isDragging = true;
+        handleMove(e.clientX);
+      });
+
+      window.addEventListener('mousemove', (e) => {
+        if (!isDragging) return;
+        handleMove(e.clientX);
+      });
+
+      window.addEventListener('mouseup', () => {
+        isDragging = false;
+      });
+
+      // Touch events for mobile
+      container.addEventListener('touchstart', (e) => {
+        isDragging = true;
+        if (e.touches && e.touches[0]) handleMove(e.touches[0].clientX);
+      }, { passive: true });
+
+      window.addEventListener('touchmove', (e) => {
+        if (!isDragging) return;
+        if (e.touches && e.touches[0]) handleMove(e.touches[0].clientX);
+      }, { passive: true });
+
+      window.addEventListener('touchend', () => {
+        isDragging = false;
+      });
+
+      // Default start at 50%
+      updateSlider(50);
+    }
+
+    /* =========================================================================
+       4. MULTI-STEP CONVERSATION FUNNEL LOGIC
+       ========================================================================= */
+    let currentStep = 1;
+
+    function goToStep(step) {
+      if (step === 2) {
+        // Validate that at least one work type is chosen
+        const checked = document.querySelectorAll('input[name="work_type"]:checked');
+        if (checked.length === 0) {
+          alert(currentLang === 'fr' ? 'Veuillez sélectionner au moins un type de travaux.' : currentLang === 'en' ? 'Please select at least one type of work.' : 'Gelieve minimaal één type werkzaamheden te selecteren.');
+          return;
+        }
+      }
+
+      // Hide all steps
+      [1, 2, 3].forEach(s => {
+        const stepEl = document.getElementById('funnel-step-' + s);
+        const indicator = document.getElementById('step-indicator-' + s);
+        if (stepEl) {
+          if (s === step) {
+            stepEl.classList.remove('step-hidden');
+            stepEl.classList.add('step-active');
+          } else {
+            stepEl.classList.remove('step-active');
+            stepEl.classList.add('step-hidden');
+          }
+        }
+        if (indicator) {
+          if (s <= step) {
+            indicator.className = "w-8 h-8 rounded-full bg-brand-blue text-white font-bold text-xs flex items-center justify-center shadow transition-all";
+          } else {
+            indicator.className = "w-8 h-8 rounded-full bg-slate-200 dark:bg-slate-700 text-slate-600 dark:text-slate-300 font-bold text-xs flex items-center justify-center transition-all";
+          }
+        }
+      });
+
+      // Update dividers with AST Blue
+      const div1 = document.getElementById('divider-1-2');
+      const div2 = document.getElementById('divider-2-3');
+      if (div1) div1.style.backgroundColor = step >= 2 ? '#0088CB' : '';
+      if (div2) div2.style.backgroundColor = step >= 3 ? '#0088CB' : '';
+
+      currentStep = step;
+    }
+
+    function prefillFunnel(workTypeValue) {
+      // Scroll to funnel
+      const funnel = document.getElementById('offerte-funnel');
+      if (funnel) {
+        funnel.scrollIntoView({ behavior: 'smooth' });
+      }
+
+      // Reset checkboxes and check selected
+      document.querySelectorAll('input[name="work_type"]').forEach(cb => {
+        cb.checked = (cb.value === workTypeValue);
+        updateOptionStyle(cb);
+      });
+
+      goToStep(1);
+    }
+
+    function updateOptionStyle(checkbox) {
+      const parentLabel = checkbox.closest('label');
+      if (parentLabel) {
+        if (checkbox.checked) {
+          parentLabel.classList.add('border-brand-blue', 'bg-blue-50/60', 'dark:bg-brand-blue/15');
+          parentLabel.classList.remove('border-brand-border', 'dark:border-slate-700');
+        } else {
+          parentLabel.classList.remove('border-brand-blue', 'bg-blue-50/60', 'dark:bg-brand-blue/15');
+          parentLabel.classList.add('border-brand-border', 'dark:border-slate-700');
+        }
+      }
+    }
+
+    function handleFunnelSubmit(e) {
+      e.preventDefault();
+
+      const name = document.getElementById('funnel-name').value;
+      const phone = document.getElementById('funnel-phone').value;
+      const email = document.getElementById('funnel-email').value;
+      const city = document.getElementById('funnel-city').value;
+
+      if (!name || !phone || !email || !city) {
+        alert(currentLang === 'fr' ? 'Veuillez remplir tous les champs obligatoires.' : currentLang === 'en' ? 'Please fill in all required fields.' : 'Gelieve alle verplichte velden in te vullen.');
+        return;
+      }
+
+      // Generate random realistic ref id
+      const refNum = '#AST-2026-' + Math.floor(1000 + Math.random() * 9000);
+      const modalRefEl = document.getElementById('modal-ref-id');
+      if (modalRefEl) modalRefEl.textContent = refNum;
+
+      // Show success modal
+      const modal = document.getElementById('success-modal');
+      if (modal) modal.classList.remove('hidden');
+    }
+
+    function closeSuccessModal() {
+      const modal = document.getElementById('success-modal');
+      if (modal) modal.classList.add('hidden');
+      goToStep(1);
+    }
+
+    /* =========================================================================
+       5. FAQ ACCORDION & MOBILE MENU TOGGLE
+       ========================================================================= */
+    function toggleFaq(btn) {
+      const answer = btn.nextElementSibling;
+      const icon = btn.querySelector('.fa-chevron-down');
+      
+      if (answer.classList.contains('open')) {
+        answer.classList.remove('open');
+        if (icon) icon.style.transform = 'rotate(0deg)';
+      } else {
+        // Close others
+        document.querySelectorAll('.faq-answer.open').forEach(el => {
+          el.classList.remove('open');
+          const siblingBtn = el.previousElementSibling;
+          if (siblingBtn) {
+            const sibIcon = siblingBtn.querySelector('.fa-chevron-down');
+            if (sibIcon) sibIcon.style.transform = 'rotate(0deg)';
+          }
+        });
+
+        answer.classList.add('open');
+        if (icon) icon.style.transform = 'rotate(180deg)';
+      }
+    }
+
+    function toggleMobileMenu() {
+      const menu = document.getElementById('mobile-menu');
+      const icon = document.getElementById('menu-icon');
+      if (menu) {
+        menu.classList.toggle('hidden');
+        if (icon) {
+          if (menu.classList.contains('hidden')) {
+            icon.className = 'fa-solid fa-bars text-xl';
+          } else {
+            icon.className = 'fa-solid fa-xmark text-xl';
+          }
+        }
+      }
+    }
+
+    function handleQuickContact(e) {
+      e.preventDefault();
+      alert(currentLang === 'fr' ? 'Merci ! Votre message a été transmis directement au gérant Jeroen Vandevenne.' : currentLang === 'en' ? 'Thank you! Your message has been sent directly to founder Jeroen Vandevenne.' : 'Bedankt! Uw bericht is rechtstreeks verzonden naar zaakvoerder Jeroen Vandevenne. U wordt snel teruggebeld.');
+      e.target.reset();
+    }
+  </script>
+</body>
+</html>
